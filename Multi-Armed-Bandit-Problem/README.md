@@ -13,13 +13,13 @@ This folder contains three basic algorithms to solve the multi-armed bandit Prob
 ## How to solve this problem
 
 ### Random selection
-![alt text](./images/random_selection.png "Description goes here")
+![alt text](./images/random_selection.png)
 
 ### Upper Confidence Bound
-
+![alt text](./images/UCB.png)
 ### Thompson Sampling
 
-![alt text](./images/Thompson Sampling.png "Description goes here")
+![alt text](./images/Thompson_Sampling.png)
 
 ## Running
 The results can reproduced by running each script with Python 3:
