@@ -18,7 +18,7 @@ This folder contains three basic algorithms to solve the multi-armed bandit Prob
 
 ### Thompson Sampling
 
-### Running
+## Running
 The results can reproduced by running each script with Python 3:
 * Random selection
 ``` shell
