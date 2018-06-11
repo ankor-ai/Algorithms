@@ -17,6 +17,7 @@ This folder contains three basic algorithms to solve the multi-armed bandit Prob
 ### Upper Confidence Bound
 
 ### Thompson Sampling
+![myimage-alt-tag](./images/Thompson Sampling.png)
 ![alt text](./images/Thompson Sampling.png)
 
 ## Running
