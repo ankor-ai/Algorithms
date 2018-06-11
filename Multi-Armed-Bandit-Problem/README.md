@@ -17,6 +17,7 @@ This folder contains three basic algorithms to solve the multi-armed bandit Prob
 ### Upper Confidence Bound
 
 ### Thompson Sampling
+![alt text](./images/Thompson Sampling.png)
 
 ## Running
 The results can reproduced by running each script with Python 3:
