@@ -23,6 +23,9 @@ The multi-armed bandit problem is the challenge to *play with multiple one-armed
   <img src="./images/multi-armed-bandit.png">
 </p>
 
+Interestingly, many real problems can be reduced to the multi-armed bandit problem. In fact, any problem in which a fixed limited set of resources must be allocated between competing (alternative) choices in a way that maximizes their expected gain boils down to the multi-armed bandit problem. In order to convince you why this is true, let's take the example of advertisement selection on a website.
+
+### Case study: advertisement selection on a website
 
 ## How to solve this problem
 
