@@ -17,6 +17,13 @@ Don't you love problems with such cool names in machine learning ? The multi-arm
 
 As shown in the figure, a bandit is a slot machine. It is called specifically one-armed bandit because of the handle on the right that moves. In some places like casinos, you can still find these machines where you have to pull the handle. Nowadays, this process is likely electronic where you just press a button to initiate the game. Why it is called bandit ? Well, it is one of the quickest way on earth to loose your money in a casino. Some people even believe that companies that buil these machines put a bug into them to make people loose faster than what a simple probability computation reveals.
 
+The multi-armed bandit problem is the challenge to *play with multiple one-armed bandit simultaneously*:
+
+<p align="center">
+  <img src="./images/multi-armed-bandit.png">
+</p>
+
+
 ## How to solve this problem
 
 ### Random selection
