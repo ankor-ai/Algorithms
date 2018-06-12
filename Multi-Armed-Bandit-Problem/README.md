@@ -23,9 +23,20 @@ The multi-armed bandit problem is the challenge to *play with multiple one-armed
   <img src="./images/multi-armed-bandit.png">
 </p>
 
-Interestingly, many real problems can be reduced to the multi-armed bandit problem. In fact, any problem in which a fixed limited set of resources must be allocated between competing (alternative) choices in a way that maximizes their expected gain boils down to the multi-armed bandit problem. In order to convince you why this is true, let's take the example of advertisement selection on a website.
+Interestingly, many real problems can be reduced to the multi-armed bandit problem. In fact, any problem in which a fixed limited set of resources must be allocated between competing (alternative) choices in a way that maximizes their expected gain boils down to the multi-armed bandit problem. In order to convince you why this is true, let's take a real problem of the ad selection on a web page.
 
-### Case study: advertisement selection on a website
+### Case study: the ad selection on a web page
+
+Image that we have N ads that we display to users each time they connect to a web page. We can only display one ad each time the user ask for the web page. We would like to maximize the probability that user click on the ad so that we can earn a fixed amount of dollars per click. as you can guess, the key question to answer is: which ad among the N ads we have should we display to maximize our profit ?
+
+Where is the analogy with the multi-armed bandit problem ? Well, Let's consider:
+* each ad as a bandit.
+* displaying an ad is equivalent to play with one-armed bandit.
+* the fact of earning a fixed amount of dollars if the user click on the ad equivalent to earn a fixed amount of dollars if we win a one-armed bandit game.
+
+Then, solving the ad selection strategy on a web page is exactly equivalent to solving the multi-armed bandit game.
+
+### The mathematical model of the multi-armed bandit problem
 
 ## How to solve this problem
 
