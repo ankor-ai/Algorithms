@@ -38,7 +38,7 @@ Then, solving the ad selection strategy on a web page is exactly equivalent to s
 
 ### The mathematical model of the multi-armed bandit problem
 <p align="center">
-  <img src="./images/one-armed-bandit-model.png">
+  <img src="./images/multi-armed-bandit-model.png">
 </p>
 ## How to solve this problem
 
