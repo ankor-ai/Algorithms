@@ -20,13 +20,21 @@ As shown in the figure, a bandit is a slot machine. It is called specifically on
 ## How to solve this problem
 
 ### Random selection
-![alt text](./images/random_selection.png)
+<p align="center">
+  <img src="./images/random_selection.png">
+</p>
 
 ### Upper Confidence Bound
-![alt text](./images/UCB.png)
+
+<p align="center">
+  <img src="./images/UCB.png">
+</p>
+
 ### Thompson Sampling
 
-![alt text](./images/Thompson_Sampling.png)
+<p align="center">
+  <img src="./images/Thompson_Sampling.png">
+</p>
 
 ## Running
 The results can reproduced by running each script with Python 3:
