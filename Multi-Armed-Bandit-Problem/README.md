@@ -37,9 +37,11 @@ Where is the analogy with the multi-armed bandit problem ? Well, Let's consider:
 Then, solving the ad selection strategy on a web page is exactly equivalent to solving the multi-armed bandit game.
 
 ### The mathematical model of the multi-armed bandit problem
+
 <p align="center">
   <img src="./images/multi-armed-bandit-model.png">
 </p>
+
 ## How to solve this problem
 
 ### Random selection
