@@ -36,7 +36,7 @@ Where is the analogy with the multi-armed bandit problem ? Well, Let's consider:
 
 Then, solving the ad selection strategy on a web page is exactly equivalent to solving the multi-armed bandit game.
 
-### The mathematical model of the multi-armed bandit problem
+### The intuition the multi-armed bandit problem
 
 We assume that each one of these one-armed bandit has a distribution of outcomes out of which the machine picks results telling you if you win or loose. If we use our ad selection web page problem, each ad is a one-armed bandit that either tells you if you win an amount of dollars per click or not. For the sake of simplicity, let's choose the amount of dollars per click to be 1. Therefore, each ad give you an outcome, either 1 if you win (i.e. the user clicked on the ad) or 0 if not.
 
@@ -50,8 +50,11 @@ Let's take the example of 5 multi-armed bandit problem. Here are the distributio
 
 As you can see, just by looking to these distributions, what is the best machine ? well it seems the rightmost machine with the orange distribution. Why ? Well, simply because it has the highest mean. So if you had 5 ads with these 5 distributions, the optimal solution would be to choose the ad with the orange distribution for each web page loading. Again, the problem is that we don't know these distributions in advance.
 
-Thus, to figure it out, we need to try (i.e. accept to loose) and longer it takes us to figure it out, the more money we will spend on the wrong ones (i.e. any ad except the one with the orange distribution). So, the multi-armed bandit problem is a trade-off between the time we are going to spend to explore the machine outcomes to find out the best one, and we want to start to as quick as possible start exploiting the our finding to make money from ads. This is exactly what we call *the exploration–exploitation dilemma* in reinforcement learning.
+Thus, to figure it out, we need to try (i.e. accept to loose) and the longer it takes us to figure it out, the more money we will spend on the wrong ones (i.e. any ad except the one with the orange distribution). So, the multi-armed bandit problem is a trade-off between the time we are going to spend to explore the machine outcomes to find out the best one, and we want to start to as quick as possible start exploiting the our finding to make money from ads. This is exactly what we call *the exploration–exploitation dilemma* in reinforcement learning.
 
+There is mathematical fundamental concept behind this reasoning which is called [_regret_](http://www.jmlr.org/papers/volume3/auer02a/auer02a.pdf). Basically, regret is what you are loosing by not playing the optimal machine. Each time you play a non-optimal machine, you have a regret which is the difference between the best outcome and the non best outcome. In our example, regret would be either 0 when we choose the optimal machine or 1 when we choose any non-optimal machine. As you can already notice, the longer you explore non-optimal machines, the higher regret you have. This is why many reinforcement learning papers quantify the performance of their algorithms by computing regret.
+
+So how can we find the best machine and spend the least amount of time exploring non-optimal machines ?
 
 
 ## How to solve this problem
