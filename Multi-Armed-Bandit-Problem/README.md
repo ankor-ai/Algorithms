@@ -54,12 +54,20 @@ Thus, to figure it out, we need to try (i.e. accept to loose) and the longer it 
 
 There is mathematical fundamental concept behind this reasoning which is called [_regret_](http://www.jmlr.org/papers/volume3/auer02a/auer02a.pdf). Basically, regret is what you are loosing by not playing the optimal machine. Each time you play a non-optimal machine, you have a regret which is the difference between the best outcome and the non best outcome. In our example, regret would be either 0 when we choose the optimal machine or 1 when we choose any non-optimal machine. As you can already notice, the longer you explore non-optimal machines, the higher regret you have. This is why many reinforcement learning papers quantify the performance of their algorithms by computing regret.
 
-So how can we find the best machine and spend the least amount of time exploring non-optimal machines ?
+So how can we find the best machine and spend the least amount of time exploring non-optimal machines ? To answer this question, we need to simulate a situation where we try to answer the multi-armed bandit problem.
 
+### Description of the data
+
+The csv file *Ads_CTR_Optimisation.csv* contains the outcomes of loading 10 types of ads on a web page multiple times. You can image each row of this file as a user and each column an ad. For a given user, each one-armed bandit (i.e. ad) will provide a binary outcome: 1 if the user clicked and thus we win an amount of money and 0 otherwise.
 
 ## How to solve this problem
 
+We will explore three strategies to pick the best ad.
+
 ### Random selection
+
+While one can assume that a random selection is definitely a bad choice, we want to make sure to use it as a baseline to compare other strategies with it. The following figure shows how often each ad has been selected. Without any surprise, the random strategy blindly explore the ads.
+
 <p align="center">
   <img src="./images/random_selection.png">
 </p>
