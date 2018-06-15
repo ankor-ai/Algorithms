@@ -58,7 +58,7 @@ So how can we find the best machine and spend the least amount of time exploring
 
 ### Description of the data
 
-The csv file *Ads_CTR_Optimisation.csv* contains the outcomes of loading 10 types of ads on a web page multiple times. You can image each row of this file as a user and each column an ad. For a given user, each one-armed bandit (i.e. ad) will provide a binary outcome: 1 if the user clicked and thus we win an amount of money and 0 otherwise.
+The csv file *Ads_CTR_Optimisation.csv* contains the outcomes of loading 10 types of ads (i.e. number of columns) on a web page 10000 times (i.e. number of rows). For a given user, each one-armed bandit (i.e. ad) will output a binary outcome: 1 if the user clicked and thus we win an amount of money or 0 otherwise.
 
 ## How to solve this problem
 
