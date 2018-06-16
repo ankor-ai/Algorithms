@@ -76,7 +76,7 @@ While one can assume that a random selection is definitely a bad choice, we want
 
 UCB is one of the most popular bandit algorithm because it is easy to implement and provides a good regret bounds.
 
-#### Intuition behind UCB
+#### Intuition behind the UCB algorithm
 
 Imagine that we know the distribution behind each one-armed bandit. Let's first draw their means:
 
@@ -126,7 +126,7 @@ Again as you can notice, the initial expected return goes up and the upper confi
 
 This [_blog_](http://banditalgs.com/2016/09/18/the-upper-confidence-bound-algorithm/) provides a good mathematical explanation of the upper confidence term which has this nice property to decrease over time.
 
-When we run the UCB algorithm, we found the following frequency of selecting ads as follows:
+When we run the UCB algorithm, we found the frequency of selecting ads as follows:
 
 <p align="center">
   <img src="./images/UCB.png">
@@ -138,9 +138,14 @@ As you can notice, the best ad to selected found by the algorithm is 4.
 
 Thompson sampling is another popular algorithm to solve the multi-armed problem.
 
+#### The intuition behind Thompson Sampling
+
+When we run the thompson sampling algorithm, we found the frequency of selecting ads as follows:
 <p align="center">
   <img src="./images/Thompson_Sampling.png">
 </p>
+
+As you can notice, the best ad to selected found by the algorithm is 4, exactly as the UCB algorithm.
 
 ## Running
 The results can reproduced by running each script with Python 3:
