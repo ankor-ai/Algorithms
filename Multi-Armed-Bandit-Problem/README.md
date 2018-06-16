@@ -113,7 +113,7 @@ Using the ad selection example, let's say we place the ad in the middle and we w
 Now, in the next round, we are going to should a machine which has which the highest upper confidence bound. In this case, it can be any machine except the one we have just picked. Let's say we pick the second rightmost machine and we get a positive reward (i.e. the user click on the ad):
 
 <p align="center">
-  <img src="./images/UCB_2rd_machine_picked.png">
+  <img src="./images/UCB_2nd_machine_picked.png">
 </p>
 
 Again as you can notice, the initial expected return goes up and the upper confidence bound becomes smaller. The algorithm keeps running in the same way, and as long as we have more observations about a specific machine, its upper confidence bound becomes smaller and smaller, which means that our the expected return of that machine converges to the real expectation of the distribution. After playing multiple rounds, the final upper bounds would look like the following:
