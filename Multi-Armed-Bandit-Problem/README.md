@@ -72,7 +72,58 @@ While one can assume that a random selection is definitely a bad choice, we want
   <img src="./images/random_selection.png">
 </p>
 
-### Upper Confidence Bound
+### Upper Confidence Bound (UCB)
+
+UCB is one of the most popular bandit algorithm because it is easy to implement and provides a good regret bounds.
+
+#### Intuition behind UCB
+
+Imagine that we know the distribution behind each one-armed bandit. Let's first draw their means:
+
+<p align="center">
+  <img src="./images/UCB_expectation_terms.png">
+</p>
+
+Again, we don't know these values. Now, how does the UCB algorithm work. Well, it start by assuming the same expected return for each one-armed bandit since we do not distinguish initially between them:
+
+<p align="center">
+  <img src="./images/UCB_expectation_terms_initialization.png">
+</p>
+
+The UBC algorithm creates a confidence band around the expected return of each machine:
+
+<p align="center">
+  <img src="./images/UCB_confidence_band.png">
+</p>
+
+The key idea of the UBC algorithm is that this confidence band is designed in such a way that *with a very high probability, the confidence band will include the expected return*.
+
+In the beginning of the UBC algorithm, all machines have the same upper confidence bound. Let's say that we pick the machine in the middle:
+
+<p align="center">
+  <img src="./images/UCB_3rd_machine_picked.png">
+</p>
+
+Using the ad selection example, let's say we place the ad in the middle and we want to see if the user click on it or not. Let's say the user did not click on it. Thus, the initial expected return (dashed red line) goes down and the confidence bound becomes smaller.
+
+<p align="center">
+  <img src="./images/UCB_3rd_machine_not_clicked.png">
+</p>
+
+Now, in the next round, we are going to should a machine which has which the highest upper confidence bound. In this case, it can be any machine except the one we have just picked. Let's say we pick the second rightmost machine and we get a positive reward (i.e. the user click on the ad):
+
+<p align="center">
+  <img src="./images/UCB_2rd_machine_picked.png">
+</p>
+
+Again as you can notice, the initial expected return goes up and the upper confidence bound becomes smaller. The algorithm keeps running in the same way, and as long as we have more observations about a specific machine, its upper confidence bound becomes smaller and smaller, which means that our the expected return of that machine converges to the real expectation of the distribution.
+
+
+
+#### The mathematical justificiation behind UCB
+
+This [_blog_](http://banditalgs.com/2016/09/18/the-upper-confidence-bound-algorithm/) provides a good mathematical explanation of the 
+
 
 <p align="center">
   <img src="./images/UCB.png">
