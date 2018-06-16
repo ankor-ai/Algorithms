@@ -116,9 +116,11 @@ Now, in the next round, we are going to should a machine which has which the hig
   <img src="./images/UCB_2rd_machine_picked.png">
 </p>
 
-Again as you can notice, the initial expected return goes up and the upper confidence bound becomes smaller. The algorithm keeps running in the same way, and as long as we have more observations about a specific machine, its upper confidence bound becomes smaller and smaller, which means that our the expected return of that machine converges to the real expectation of the distribution.
+Again as you can notice, the initial expected return goes up and the upper confidence bound becomes smaller. The algorithm keeps running in the same way, and as long as we have more observations about a specific machine, its upper confidence bound becomes smaller and smaller, which means that our the expected return of that machine converges to the real expectation of the distribution. After playing multiple rounds, the final upper bounds would look like the following:
 
-
+<p align="center">
+  <img src="./images/UCB_final_bands.png">
+</p>
 
 #### The mathematical justificiation behind UCB
 
