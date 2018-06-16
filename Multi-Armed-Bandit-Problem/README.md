@@ -124,14 +124,19 @@ Again as you can notice, the initial expected return goes up and the upper confi
 
 #### The mathematical justificiation behind UCB
 
-This [_blog_](http://banditalgs.com/2016/09/18/the-upper-confidence-bound-algorithm/) provides a good mathematical explanation of the 
+This [_blog_](http://banditalgs.com/2016/09/18/the-upper-confidence-bound-algorithm/) provides a good mathematical explanation of the upper confidence term which has this nice property to decrease over time.
 
+When we run the UCB algorithm, we found the following frequency of selecting ads as follows:
 
 <p align="center">
   <img src="./images/UCB.png">
 </p>
 
+As you can notice, the best ad to selected found by the algorithm is 4.
+
 ### Thompson Sampling
+
+Thompson sampling is another popular algorithm to solve the multi-armed problem.
 
 <p align="center">
   <img src="./images/Thompson_Sampling.png">
