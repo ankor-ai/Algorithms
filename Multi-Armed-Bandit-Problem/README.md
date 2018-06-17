@@ -211,16 +211,12 @@ As you can notice, the best ad to selected found by the algorithm is 4, exactly 
 
 ## Comparison
 
-<p align="center">
-  
 | Method | Total reward | Best ad |
 | :---: | :---: | :---: |
 | Random Sampling | 1301 | Unknown |
 | UCB | 2178 | 4 |
 | Thompson Sampling | 2611 | 4 | 
-  
-</p>
-  
+
 ## Running
 The results can reproduced by running each script with Python 3:
 * Random selection
