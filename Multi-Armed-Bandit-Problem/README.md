@@ -235,4 +235,4 @@ python3 Thompson_Sampling.py
 ```
 
 ## Credit
-Most of the figures are screenshots from the videos of the [_Data Science_](https://www.youtube.com/channel/UCVUxi39CNJGofN6-CZsA9TA) youtube channel.
+Most of the figures are screenshots from the videos of the [_Data Science_](https://www.youtube.com/channel/UCVUxi39CNJGofN6-CZsA9TA) Youtube channel.
