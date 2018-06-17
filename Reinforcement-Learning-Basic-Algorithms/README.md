@@ -25,7 +25,7 @@ This MOOC lasts 6 weeks and allowed us to implement different algorithms each we
    * [A3C](./week5/11_practice_a3c.ipynb)
 
 * Week 6:
-   * [Bandits and exploration](./week6/12_bandits.ipynb) (more details about the multi-armed bandit Problem are available [here](../Multi-Armed-Bandit-Problem))
+   * [Bandits and exploration](./week6/12_bandits.ipynb) (more details about the multi-armed bandit problem are available [here](../Multi-Armed-Bandit-Problem))
    * [Monte Carlo Tree Search (MCTS)](./week6/13_practice_mcts.ipynb)
    
 ## Running
