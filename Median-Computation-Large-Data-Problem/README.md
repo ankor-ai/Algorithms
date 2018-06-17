@@ -10,7 +10,11 @@ This isn’t an issue for calculating the mean, since the sum only requires one 
 
 If there were a way to calculate a "running median" you could save space by only having a batch of real numbers loaded at a time. Unfortunately, there’s no way to do an exact running median, but there are ways to do it approximately.
 
-The [binapprox algorithm](http://www.stat.cmu.edu/~ryantibs/papers/median.pdf) does just this. The idea behind it is to find the median from the data's histogram. As an example, say we have a list of 30 numbers between 7 and 16 and its histogram is:
+The [binapprox algorithm](http://www.stat.cmu.edu/~ryantibs/papers/median.pdf) does just this. The idea behind it is to find the median from the data's histogram.
+
+## Example
+
+Say we have a list of 30 numbers between 7 and 16 and its histogram is:
 
 <p align="center">
   <img src="./images/bin_approx_diagram.png">
