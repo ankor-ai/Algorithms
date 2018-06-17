@@ -28,4 +28,9 @@ This MOOC lasts 6 weeks and allowed us to implement different algorithms each we
    * [Bandits and exploration](./week6/12_bandits.ipynb)
    * [Monte Carlo Tree Search (MCTS)](./week6/13_practice_mcts.ipynb)
    
-   ## Running
+## Running
+
+Before running the code of a specific notebook, please make sure to include the python files of the directory *coursera_files* used by the notebook. Enjoy!
+
+## Contact
+If you have any question or comment, please feel free to create a PR or an issue.
