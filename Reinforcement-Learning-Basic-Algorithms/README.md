@@ -32,11 +32,11 @@ This MOOC lasts 6 weeks and allowed us to implement different algorithms each we
 ## Running
 Before running the code of a specific notebook, please make sure to include the python files of the directory *coursera_files* used by the notebook. Enjoy!
 
-# Course info
+## Course info
 * Lecture slides are [here](https://yadi.sk/d/loPpY45J3EAYfU).
 * [Wiki page](https://github.com/yandexdataschool/Practical_RL/wiki/Practical-RL)
 
-# Additional reinforcement learning materials
+## Additional reinforcement learning materials
 * A large list of RL materials - [awesome rl](https://github.com/aikorea/awesome-rl)
 
 ## Contact
