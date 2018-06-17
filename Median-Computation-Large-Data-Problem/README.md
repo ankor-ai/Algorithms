@@ -17,7 +17,7 @@ The [binapprox algorithm](http://www.stat.cmu.edu/~ryantibs/papers/median.pdf) d
 Say we have a list of 30 numbers between 7 and 16 and its histogram is:
 
 <p align="center">
-  <img src="./images/bin_approx_diagram.png" width="70" height="50">
+  <img src="./images/bin_approx_diagram.png" width="210" height="150">
 </p>
 
 The median is the average of the 15th and 16th numbers in the ordered list (we can think of this as the 15.5th number). So, starting from the left, if we sum up the counts in the histogram bins until we get to just over 15.5 then we know the last bin we added must have contained the median.
