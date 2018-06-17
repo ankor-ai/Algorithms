@@ -140,7 +140,36 @@ Thompson sampling is another popular algorithm to solve the multi-armed problem.
 
 #### The intuition behind Thompson Sampling
 
+In order to get the intuition behind this method, let's consider the problem of selecting the best ad among 3 ads instead of 5 ads like we did in the UCB algorithm. Let's imagine that we know the expected return of each one of the 3 ads:
+
+<p align="center">
+  <img src="./images/Thompson_sampling_expectation_terms_initialization.png">
+</p>
+
+In reality, we don't know of course these expected values. If we do, it is obvious that rightmost machine (i.e. having the orange expected return) is the best one to choose all the time. For now, we just use it to better understand what Thompson sampling does.
+
+At the beginning, we just start to try each ad few times. Let's say we have few trials of the leftmost machine:
+
+<p align="center">
+  <img src="./images/Thompson_sampling_sample1.png">
+</p>
+
+Based on those trials, the algorithm constructs a distribution.
+
+<p align="center">
+  <img src="./images/Thompson_sampling_sample1_distribution.png">
+</p>
+
+This is where Thompson Sampling starts to be different from the UCB algorithm. We will get to the meaning of this distribution in a second. Let's have trials from the two other ads and construct their corresponding distributions:
+
+<p align="center">
+  <img src="./images/Thompson_sampling_sample1_all_distributions.png">
+</p>
+
+The meaning of these distributions is confusing. These distributions are not representing the distribution behind the machine. The first thing that might come to mind is that we are trying to construct distributions that approximate the real distribution of the expected outcome of each machine. **This is not the case**. These distributions are constructing something completly different: we are constructing distributions of **where we think the actual expected return might lie**. It is very important to understand this point. In other words, we creating an proxy mechanism to solve the problem. Since we don't know the value of the expected return, we construct a distribution that tells us where the expected return might be.
+
 When we run the thompson sampling algorithm, we found the frequency of selecting ads as follows:
+
 <p align="center">
   <img src="./images/Thompson_Sampling.png">
 </p>
