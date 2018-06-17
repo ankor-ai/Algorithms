@@ -3,6 +3,7 @@
 ## Description
 This repository provides the implementation of the basic reinforcement learning algorithms which we implemented as programming assignments of the [practical reinforcement learning MOOC](https://www.coursera.org/learn/practical-rl) on Coursera, including the honors track assignments. Most of the assignments' problems are inspired by [Yandex School of Data Analysis's Github Repository](https://github.com/yandexdataschool/Practical_RL)
 
+## Syllabus
 This MOOC lasts 6 weeks and allowed us to implement different algorithms each week:
 * Week 1:
    * [Cross Entropy Method](./week1/02_crossentropy_method.ipynb)
@@ -29,8 +30,14 @@ This MOOC lasts 6 weeks and allowed us to implement different algorithms each we
    * [Monte Carlo Tree Search (MCTS)](./week6/13_practice_mcts.ipynb)
    
 ## Running
-
 Before running the code of a specific notebook, please make sure to include the python files of the directory *coursera_files* used by the notebook. Enjoy!
+
+# Course info
+* Lecture slides are [here](https://yadi.sk/d/loPpY45J3EAYfU).
+* [Wiki page](https://github.com/yandexdataschool/Practical_RL/wiki/Practical-RL)
+
+# Additional reinforcement learning materials
+* A large list of RL materials - [awesome rl](https://github.com/aikorea/awesome-rl)
 
 ## Contact
 If you have any question or comment, please feel free to create a PR or an issue.
