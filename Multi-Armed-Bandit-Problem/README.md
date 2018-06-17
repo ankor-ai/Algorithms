@@ -168,7 +168,16 @@ This is where Thompson Sampling starts to be different from the UCB algorithm. W
 
 The meaning of these distributions is confusing. These distributions are not representing the distribution behind the machine. The first thing that might come to mind is that we are trying to construct distributions that approximate the real distribution of the expected outcome of each machine. **This is not the case**. These distributions are constructing something completly different: we are constructing distributions of **where we think the actual expected return might lie**. It is very important to understand this point. In other words, we creating an proxy mechanism to solve the problem. Since we don't know the value of the expected return, we construct a distribution that tells us where the expected return might be.
 
-When we run the thompson sampling algorithm, we found the frequency of selecting ads as follows:
+Now, how can the algorithm choose the best machine based on the distribution of the expected return location of each each machine ?
+Tompson sampling will sample a value out of each machine distribution. These values are sampled according to the distribution, meaning that it is more likely to pull a value near the mean that from the tail.
+
+<p align="center">
+  <img src="./images/Thompson_sampling_sample_each_distribution.png">
+</p>
+
+Over the long run, we will pick values that are closer to the center, but as shown in the figure above, we might pull values from distributions such that the sample of the best distribution (i.e. the orange distribution) is lower that the one coming from a non-optimal distribution (i.e. the green distribution).
+
+When we run the Thompson sampling algorithm, we found the frequency of selecting ads as follows:
 
 <p align="center">
   <img src="./images/Thompson_Sampling.png">
