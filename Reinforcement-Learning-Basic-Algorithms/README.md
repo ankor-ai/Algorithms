@@ -1,7 +1,7 @@
 # Reinforcement Learning Basic Algorithms
 
 ## Description
-This repository provides the implementation of the basic reinforcement learning algorithms which we implemented as programming assignments of the [_practical reinforcement learning MOOC_](https://www.coursera.org/learn/practical-rl/?target=_blank) on Coursera, including the honors track assignments.
+This repository provides the implementation of the basic reinforcement learning algorithms which we implemented as programming assignments of the [_practical reinforcement learning MOOC_](https://www.coursera.org/learn/practical-rl){target="_blank"} on Coursera, including the honors track assignments.
 
 This MOOC lasts 6 weeks and allowed us to implement different algorithms each week:
 * Week 1:
