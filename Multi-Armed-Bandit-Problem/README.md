@@ -126,6 +126,8 @@ Again as you can notice, the initial expected return goes up and the upper confi
 
 This [_blog_](http://banditalgs.com/2016/09/18/the-upper-confidence-bound-algorithm/) provides a good mathematical explanation of the upper confidence term which has this nice property to decrease over time.
 
+---
+
 When we run the UCB algorithm, we found the frequency of selecting ads as follows:
 
 <p align="center">
@@ -166,7 +168,7 @@ This is where Thompson Sampling starts to be different from the UCB algorithm. W
   <img src="./images/Thompson_sampling_sample1_all_distributions.png">
 </p>
 
-The meaning of these distributions is confusing. These distributions are not representing the distribution behind the machine. The first thing that might come to mind is that we are trying to construct distributions that approximate the real distribution of the expected outcome of each machine. **This is not the case**. These distributions are constructing something completly different: we are constructing distributions of **where we think the actual expected return might lie**. It is very important to understand this point. In other words, we creating an proxy mechanism to solve the problem. Since we don't know the value of the expected return, we construct a distribution that tells us where the expected return might be.
+The meaning of these distributions is confusing. These distributions are not representing the distribution behind the machine. The first thing that might come to mind is that we are trying to construct distributions that approximate the real distribution of the expected outcome of each machine. **This is not the case**. These distributions are constructing something completly different: we are constructing distributions of **where we think the actual expected return might lie**. It is very important to understand this point. In other words, we are creating a proxy mechanism to solve the problem. Since we don't know the value of the expected return, we construct a distribution that tells us where the expected return might be.
 
 Now, how can the algorithm choose the best machine based on the distribution of the expected return location of each each machine ?
 Tompson sampling will sample a value out of each machine distribution. These values are sampled according to the distribution, meaning that it is more likely to pull a value near the mean that from the tail.
@@ -175,7 +177,29 @@ Tompson sampling will sample a value out of each machine distribution. These val
   <img src="./images/Thompson_sampling_sample_each_distribution.png">
 </p>
 
-Over the long run, we will pick values that are closer to the center, but as shown in the figure above, we might pull values from distributions such that the sample of the best distribution (i.e. the orange distribution) is lower that the one coming from a non-optimal distribution (i.e. the green distribution).
+As shown in the figure above, we might pull values from distributions such that the sample of the best distribution (i.e. the orange distribution) is lower that the one coming from a non-optimal distribution (i.e. the green distribution).
+
+Now, based on these samples, we pick the machine that has the maximum value. In this case, the algorithm will pick the machine in the middle (i.e. the green one).
+
+<p align="center">
+  <img src="./images/Thompson_sampling_sample_best_value.png">
+</p>
+
+However, over the long run, we will pick values that are closer to the center, simply because they are more probable. Thus, if these samples are near the center of each distribution, then will pick the best distribution all the time.
+
+Finally, we will use these three samples from these three distribution to update the distributions.
+
+<p align="center">
+  <img src="./images/Thompson_sampling_updated_distribution.png">
+</p>
+
+This is why Thompson sampling is based on bayesian inference, simply because it uses the current distributions as a prior to compute the updates distributions (i.e. posterior) using the sampled values (i.e. likelihood).
+
+#### The mathematical justificiation behind UCB
+
+This [_paper_](https://arxiv.org/abs/1707.02038) provides a very good explanantion of Thompson sampling.
+
+---
 
 When we run the Thompson sampling algorithm, we found the frequency of selecting ads as follows:
 
