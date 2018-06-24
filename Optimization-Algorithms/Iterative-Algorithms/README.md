@@ -7,3 +7,6 @@ This repo describes and implements in Python 3 all the algorithms describes in t
 Iterative methods for optimization can be classified into two categories:
 * line search methods
 * trust region methods
+
+# References:
+* [A review of trust region algorithms for optimization](ftp://lsec.cc.ac.cn/pub/yyx/papers/p995.pdf)
