@@ -16,6 +16,11 @@ Like any standard optimization problem, we define the optimization problem as fo
   <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5ClVert%20%5Cnabla%5E%7B2%7Df%28x%29%20-%20%5Cnabla%5E%7B2%7Df%28y%29%20%5ClVert%20%5C%3B%5Cleq%20%5Cgamma%20%5C%3B%20%5ClVert%20x-y%20%5ClVert">
 </p>
 
+* first order stationarity assumption:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5ClVert%20%5Cnabla%20f%28x%5E*%29%20%5ClVert%20%5C%3B%20%3D%5C%3B%200">
+</p>
+
 
 ## Newton's method for a one variable function
 
