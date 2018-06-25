@@ -3,6 +3,8 @@
 ## Description
 This repository provides the description and the implementation of the Newton's method.
 
+Newton's method is an optimization algorithm which, in the convex setting, iteratively minimizes **quadratic approximations** to the objective function. It can be impractical for high-dimensional problems because it requires inverting the Hessian matrix, but many highly effective optimization algorithms can be viewed as approximations to Newton's method.
+
 We define the optimization problem as:
 
 <p align="center">
@@ -45,5 +47,6 @@ In the one-dimensional problem, Newton's method finds the roots attempts to cons
 </p>
 
 # References
+* [Newton Section of Stephen Boyd's book](http://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf#page=498)
 * [Stephen Boyd's Stanford lecture](https://www.youtube.com/watch?v=sTCtkkqrY8A#t=1924)
 
