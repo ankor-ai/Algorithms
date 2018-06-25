@@ -10,6 +10,9 @@ We define the optimization problem as:
 </p>
 
 ## Assumptions of the Newton's method
+
+To guarantee the convergence, this method assume the following assumptions:
+
 * f is *twice differentiable* (i.e. twice Lipschitz continuously):
 
 <p align="center">
@@ -21,6 +24,7 @@ We define the optimization problem as:
   <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5ClVert%20%5Cnabla%20f%28x%5E*%29%20%5ClVert%20%5C%3B%20%3D%5C%3B%200">
 </p>
 
+* the Hessian of f is positive definite (i.e. all the eigenvalues of the Hessian are strictly positive)
 
 ## Newton's method for a one variable function
 
