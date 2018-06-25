@@ -3,10 +3,10 @@
 ## Description
 This repository provides the description and the implementation of the Newton's method.
 
-Like any standard optimization problem, we define the optimization problem as follows:
+We define the optimization problem as:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%24%5Cmin%5Climits_%7B%5Cmathbf%7Bx%7D%7D%20%5C%3B%20f%28%5Cmathbf%7Bx%7D%29%24">
+  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5Cmathbf%7Bx%5E*%7D%20%3D%20%5C%3B%24%5Cmin%5Climits_%7B%5Cmathbf%7Bx%7D%7D%20%5C%3B%20f%28%5Cmathbf%7Bx%7D%29%24">
 </p>
 
 ## Assumptions of the Newton's method
