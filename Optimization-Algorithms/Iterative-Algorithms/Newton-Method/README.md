@@ -28,6 +28,15 @@ To guarantee the convergence, this method assume the following assumptions:
 
 ## Newton's method for a one variable function
 
+In the one-dimensional problem, Newton's method finds the roots attempts to construct a sequence x_n from an initial guess x0 that converges towards some value x* satisfying f ′(x*)=0. This x* is a stationary point of f.
+
+Newton's method is an algorithm to find the roots of a function f. Why finding the root of a function is related to 
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif">
+</p>
+
+
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5Chat%7Bx%7D_%7Bn&plus;1%7D%20%3D%20%5Chat%7Bx%7D_%7Bn%7D%20-%20%5Cfrac%7Bf%28%5Chat%7Bx%7D_%7Bn%7D%29%7D%7Bf%27%28%5Chat%7Bx%7D_%7Bn%7D%29%7D">
 </p>
