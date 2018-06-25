@@ -5,9 +5,8 @@ This repository provides the description and the implementation of the Newton's 
 
 Like any standard optimization problem, we define the optimization problem as follows:
 
-<p align="center">
 ![optimization_problem_definition](https://latex.codecogs.com/gif.latex?%5CLARGE%20%24%5Cmin%5Climits_%7B%5Cmathbf%7Bx%7D%7D%20%5C%3B%20f%28%5Cmathbf%7Bx%7D%29%24)
-</p>
+
 
 ## Assumptions of the Newton's method
 By a local convergence method we mean one that requires that the initial iterate x0 is close to a
