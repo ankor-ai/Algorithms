@@ -28,7 +28,7 @@ To guarantee the convergence, this method assume the following assumptions:
 
 ## Newton's method for a one variable function
 
-In the one-dimensional problem, Newton's method finds the roots attempts to construct a sequence x_n from an initial guess x0 that converges towards some value x* satisfying f ′(x*)=0. This x* is a stationary point of f.
+In the one-dimensional problem, Newton's method finds the roots attempts to construct a sequence x\_n from an initial guess x0 that converges towards some value x* satisfying f'(x*)=0. This x* is a stationary point of f.
 
 <p align="center">
   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e06f508d23a4ee050f8af7b46f2e345b9dd6b2f2">
