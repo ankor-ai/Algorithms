@@ -9,4 +9,4 @@ Iterative methods for optimization can be classified into two categories:
 * trust region methods
 
 # References:
-* [A review of trust region algorithms for optimization](ftp://lsec.cc.ac.cn/pub/yyx/papers/p995.pdf)
+* [A review of trust region algorithms for optimization](https://www.researchgate.net/publication/2304086_A_Review_of_Trust_Region_Algorithms_for_Optimization)
