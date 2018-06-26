@@ -19,10 +19,11 @@ In order to find approximately the median, this algorithm uses a very interestin
 
 ### The range existance of the median;
 
-If X is a random variable having mean µ, variance σ^2, and median m, then:
-m ∈ [µ − σ, µ + σ]
+If <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20X"> is a random variable having mean <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cmu">, variance <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Csigma%5E2">, and median <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m">, then:
 
-$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%5Cin%20%5B%5Cmu%20-%5Csigma%2C%20%5Cmu%20&plus;%20%5Csigma%5D">
+</p>
 
 ## Example
 
