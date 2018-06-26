@@ -22,6 +22,8 @@ In order to find approximately the median, this algorithm uses a very interestin
 If X is a random variable having mean µ, variance σ^2, and median m, then:
 m ∈ [µ − σ, µ + σ]
 
+$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+
 ## Example
 
 Say we have a list of 30 numbers between 7 and 16 and its histogram is:
