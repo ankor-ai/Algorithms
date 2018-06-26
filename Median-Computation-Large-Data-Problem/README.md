@@ -34,6 +34,13 @@ m \in [\mu-\sigma, \mu + \sigma] \iff |\mu - m | \leq \sigma
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%5Cin%20%5B%5Cmu-%5Csigma%2C%20%5Cmu%20&plus;%20%5Csigma%5D%20%5Ciff%20%7C%5Cmu%20-%20m%20%7C%20%5Cleq%20%5Csigma">
 </p>
+
+So let's show the second inequality:
+<p align="center">
+<img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C%20%5Cleq%20%5Csigma">
+</p>
+
+Let's start by rewriting step by step what  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C">  is.
 <!--
 \begin{align*}
 |\mu - m| &= |E(m) - m|\\
@@ -41,14 +48,9 @@ m \in [\mu-\sigma, \mu + \sigma] \iff |\mu - m | \leq \sigma
 &=|E(X - m)|
 \end{align*}
 -->
-So let's show the second inequality:
 <p align="center">
-<img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C%20%5Cleq%20%5Csigma">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%3D%20%7CE%28m%29%20-%20m%7C%5C%5C%20%26%3D%7CE%28X%29%20-%20E%28m%29%7C%5C%5C%20%26%3D%7CE%28X%20-%20m%29%7C%20%5Cend%7Balign*%7D">
 </p>
-
-Let's start by rewriting what  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C">  is.
-
-
 
 
 ## Example
