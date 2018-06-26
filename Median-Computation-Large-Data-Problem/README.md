@@ -41,10 +41,9 @@ m \in [\mu-\sigma, \mu + \sigma] \iff |\mu - m | \leq \sigma
 &=|E(X - m)|
 \end{align*}
 -->
-So let's show the second inequality:
-<img align="center" src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C%20%5Cleq%20%5Csigma">
+So let's show the second inequality: <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C%20%5Cleq%20%5Csigma">.
 
-Let's start by rewriting what <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C"> is.
+Let's start by rewriting what  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C">  is.
 
 
 
