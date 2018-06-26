@@ -12,6 +12,16 @@ If there were a way to calculate a "running median" you could save space by only
 
 The [binapprox algorithm](http://www.stat.cmu.edu/~ryantibs/papers/median.pdf) does just this. The idea behind it is to find the median from the data's histogram.
 
+
+## The binapprox algorithm
+
+In order to find approximately the median, this algorithm uses a very interesting property of the median
+
+### The range existance of the median;
+
+If X is a random variable having mean µ, variance σ^2, and median m, then:
+m ∈ [µ − σ, µ + σ]
+
 ## Example
 
 Say we have a list of 30 numbers between 7 and 16 and its histogram is:
