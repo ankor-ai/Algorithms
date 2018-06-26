@@ -55,9 +55,15 @@ If we compare the definition of the median <img src="https://latex.codecogs.com/
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%3D%20c">
 </p>
+
+<!--
+\blacksquare 
+-->
 <p align="right">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cblacksquare">
 </p>
+
+Now that we proved this first property, let's check another interesting property of the median.
 
 ### Property 2: The range existance of the median
 
@@ -111,6 +117,17 @@ Now, since the absolute value function on the real numbers is convex, then we ca
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%3D%20%7CE%28X%20-%20m%29%7C%5C%5C%20%26%5Cleq%20E%28%7CX%20-%20m%7C%29%20%5Cend%7Balign*%7D">
 </p>
+
+In the property 1 of this tutorial, we showed that the median <img src="https://latex.codecogs.com/gif.latex?m"> minimizes the following function:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%3D%20%5Cmin%5Climits_%7Bc%7D%20%5C%3Bf%28c%29%20%3D%20%5Cmin%5Climits_%7Bc%7D%5C%3B%20E%28%7CX-c%7C%29">
+</p>
+
+Thus, we can write:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%5Cleq%20E%28%7CX%20-%20m%7C%29%5C%5C%20%26%5Cleq%20E%28%7CX%20-%20%5Cmu%7C%29%20%5Cend%7Balign*%7D">
+</p>
+
 
 ## Example
 
