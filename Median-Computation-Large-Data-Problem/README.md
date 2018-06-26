@@ -51,7 +51,23 @@ Let's start by rewriting step by step what  <img src="https://latex.codecogs.com
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%3D%20%7CE%28X%29%20-%20m%7C%5C%5C%20%26%3D%7CE%28X%29%20-%20E%28m%29%7C%5C%5C%20%26%3D%7CE%28X%20-%20m%29%7C%20%5Cend%7Balign*%7D">
 </p>
-
+Now, since the absolute value function on the real numbers is convex, then we can apply the Jensen's inequality which stipulates that:
+<!--
+\text{f is convex} \iff f(E(X)) \leq E(f(X))
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctext%7Bf%20is%20convex%7D%20%5Ciff%20f%28E%28X%29%29%20%5Cleq%20E%28f%28X%29%29">
+</p>
+ Thus, we have:
+ <!--
+\begin{align*}
+|\mu - m| &= |E(X - m)|\\
+&\leq E(|X - m|)
+\end{align*}
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%3D%20%7CE%28X%20-%20m%29%7C%5C%5C%20%26%5Cleq%20E%28%7CX%20-%20m%7C%29%20%5Cend%7Balign*%7D">
+</p>
 
 ## Example
 
