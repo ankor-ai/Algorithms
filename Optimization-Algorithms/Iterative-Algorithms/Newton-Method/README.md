@@ -8,7 +8,7 @@ Newton's method is an optimization algorithm which, in the convex setting, itera
 We define the optimization problem as:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5Cmathbf%7Bx%5E*%7D%20%3D%20%5C%3B%24%5Cmin%5Climits_%7B%5Cmathbf%7Bx%7D%7D%20%5C%3B%20f%28%5Cmathbf%7Bx%7D%29%24" height="42" width="42">
+  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5Cmathbf%7Bx%5E*%7D%20%3D%20%5C%3B%24%5Cmin%5Climits_%7B%5Cmathbf%7Bx%7D%7D%20%5C%3B%20f%28%5Cmathbf%7Bx%7D%29%24" height="42" width="84">
 </p>
 
 ## Assumptions of the Newton's method
