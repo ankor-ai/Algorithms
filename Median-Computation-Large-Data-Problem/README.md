@@ -128,6 +128,28 @@ Thus, we can write:
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%5Cleq%20E%28%7CX%20-%20m%7C%29%5C%5C%20%26%5Cleq%20E%28%7CX%20-%20%5Cmu%7C%29%20%5Cend%7Balign*%7D">
 </p>
 
+Additionally, since we have:
+<!--
+E(|X-\mu|) = E(\sqrt{  (X-\mu)^2})
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20E%28%7CX-%5Cmu%7C%29%20%3D%20E%28%5Csqrt%7B%20%28X-%5Cmu%29%5E2%7D%29">
+</p>
+
+then the previous inequality becomes:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%5Cleq%20E%28%7CX%20-%20%5Cmu%7C%29%5C%5C%20%26%3D%20E%28%5Csqrt%7B%20%28X-%5Cmu%29%5E2%7D%29%20%5Cend%7Balign*%7D">
+</p>
+
+At this stage, we apply again the Jensen's inequality for the concave function f, the root square function:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%3D%20E%28%5Csqrt%7B%20%28X-%5Cmu%29%5E2%7D%29%5C%5C%20%26%5Cleq%20%5Csqrt%7BE%28X-%5Cmu%29%5E2%7D%20%5Cend%7Balign*%7D">
+</p>
+
+We are almost done. We know that:
+
+
+
 
 ## Example
 
