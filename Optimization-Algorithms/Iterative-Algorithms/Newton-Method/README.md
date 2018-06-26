@@ -6,9 +6,11 @@ This repository provides the description and the implementation of the Newton's 
 Newton's method is an optimization algorithm which, in the convex setting, iteratively minimizes **quadratic approximations** to the objective function. It can be impractical for high-dimensional problems because it requires inverting the Hessian matrix, but many highly effective optimization algorithms can be viewed as approximations to Newton's method.
 
 We define the optimization problem as:
-
+<!--
+\textbf{x}^* = \min\limits_{\textbf{x}} \;f(\textbf{x})
+-->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5Cmathbf%7Bx%5E*%7D%20%3D%20%5C%3B%24%5Cmin%5Climits_%7B%5Cmathbf%7Bx%7D%7D%20%5C%3B%20f%28%5Cmathbf%7Bx%7D%29%24" height="35" width="150">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bx%7D%5E*%20%3D%20%5Cmin%5Climits_%7B%5Ctextbf%7Bx%7D%7D%20%5C%3Bf%28%5Ctextbf%7Bx%7D%29">
 </p>
 
 ## Assumptions of the Newton's method
@@ -16,25 +18,35 @@ We define the optimization problem as:
 To guarantee the convergence, this method assume the following assumptions:
 
 * f is *twice differentiable* (i.e. twice Lipschitz continuously):
-
+<!--
+\| \nabla^2f(x) - \nabla^2f(y)\| \leq \gamma \; \| x -y\|
+-->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5ClVert%20%5Cnabla%5E%7B2%7Df%28x%29%20-%20%5Cnabla%5E%7B2%7Df%28y%29%20%5ClVert%20%5C%3B%5Cleq%20%5Cgamma%20%5C%3B%20%5ClVert%20x-y%20%5ClVert" height="35" width="150">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5C%7C%20%5Cnabla%5E2f%28x%29%20-%20%5Cnabla%5E2f%28y%29%5C%7C%20%5Cleq%20%5Cgamma%20%5C%3B%20%5C%7C%20x%20-y%5C%7C">
 </p>
 
 * first order stationarity assumption:
+<!--
+\| \nabla f(\textbf{x}^*)\| = \textbf{0}
+-->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5ClVert%20%5Cnabla%20f%28x%5E*%29%20%5ClVert%20%5C%3B%20%3D%5C%3B%200">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5C%7C%20%5Cnabla%20f%28%5Ctextbf%7Bx%7D%5E*%29%5C%7C%20%3D%20%5Ctextbf%7B0%7D">
 </p>
 
 * the Hessian of f is positive definite (i.e. all the eigenvalues of the Hessian are strictly positive)
 
-## Newton's method for a one variable function
+## Newton's method
 
-In the one-dimensional problem, Newton's method finds the roots attempts to construct a sequence x\_n from an initial guess x0 that converges towards some value x* satisfying f'(x*)=0. This x* is a stationary point of f.
-
+The Newton's method approximate the function f using a second-order Tayolor expansion:
+<!--
+f(x+\upsilon) \approx \hat{f}(x+\upsilon) = f(x) + \nabla f(x)^T \upsilon + \frac{1}{2}\; \upsilon^T \;\nabla^2 f(x)\; \upsilon
+-->
 <p align="center">
-  <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e06f508d23a4ee050f8af7b46f2e345b9dd6b2f2">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20f%28x&plus;%5Cupsilon%29%20%5Capprox%20%5Chat%7Bf%7D%28x&plus;%5Cupsilon%29%20%3D%20f%28x%29%20&plus;%20%5Cnabla%20f%28x%29%5ET%20%5Cupsilon%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%5C%3B%20%5Cupsilon%5ET%20%5C%3B%5Cnabla%5E2%20f%28x%29%5C%3B%20%5Cupsilon">
 </p>
+which is a convex quadratic function of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon">, and is minimized when v = ∆xnt. Thus,
+the Newton step ∆xnt is what should be added to the point x to minimize the
+second-order approximation of f at x.
 
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5Chat%7Bx%7D_%7Bn&plus;1%7D%20%3D%20%5Chat%7Bx%7D_%7Bn%7D%20-%20%5Cfrac%7Bf%28%5Chat%7Bx%7D_%7Bn%7D%29%7D%7Bf%27%28%5Chat%7Bx%7D_%7Bn%7D%29%7D">
