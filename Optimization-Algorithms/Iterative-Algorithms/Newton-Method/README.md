@@ -60,12 +60,6 @@ Thus, we can conclude that the best <img src="https://latex.codecogs.com/gif.lat
 \upsilon^* = \big[ \nabla^2 f(x) \big]^{-1} \;\nabla f(x)
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5Chat%7Bx%7D_%7Bn&plus;1%7D%20%3D%20%5Chat%7Bx%7D_%7Bn%7D%20-%20%5Cfrac%7Bf%28%5Chat%7Bx%7D_%7Bn%7D%29%7D%7Bf%27%28%5Chat%7Bx%7D_%7Bn%7D%29%7D">
-</p>
-
-## Newton's method for a multi-variable function
-
-<p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cupsilon%5E*%20%3D%20%5Cbig%5B%20%5Cnabla%5E2%20f%28x%29%20%5Cbig%5D%5E%7B-1%7D%20%5C%3B%5Cnabla%20f%28x%29">
 </p>
 
