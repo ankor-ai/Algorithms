@@ -35,7 +35,7 @@ Why it is the case? Well, that's simply compute the derivative of this function 
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%200%20%3D%20%5Cfrac%7Bd%7D%7Bdc%7D%5C%3BE%28%7CX-c%7C%29%20%26%3D%20E%28%5Cfrac%7Bd%7D%7Bdc%7D%5C%2C%7CX-c%7C%29%20%5C%5C%20%26%3D%20E%20%28%20%5C%3B%5Cmathbb%7BI%7D%20%28X%20%3C%20c%29%20-%20%5Cmathbb%7BI%7D%20%28X%20%3E%20c%29%20%5C%3B%29%20%5Cend%7Balign*%7D">
 </p>
-where <img src="https://latex.codecogs.com/gif.latex?%5Cmathbb%7BI%7D"> is the indicator function.
+where <img src="https://latex.codecogs.com/gif.latex?%5Cmathbb%7BI%7D"> is the indicator function. To see why this is true, note that the derivative of |X-c| with respect to c equals +1 if x < c and -1 if x > c.  We can ignore the case x = c, since this single event has zero probability in the continuous space of events.
 
 
 ### Property 2: The range existance of the median
