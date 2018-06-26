@@ -19,7 +19,7 @@ In order to find approximately the median, this algorithm uses a very interestin
 
 ### The range existance of the median;
 
-If <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20X"> is a random variable having mean <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cmu">, variance <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Csigma%5E2">, and median <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m">, then:
+If <img src="https://latex.codecogs.com/gif.latex?X"> is a random variable having mean <img src="https://latex.codecogs.com/gif.latex?%5Cmu">, variance <img src="https://latex.codecogs.com/gif.latex?%5Csigma%5E2">, and median <img src="https://latex.codecogs.com/gif.latex?m">, then:
 
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%5Cin%20%5B%5Cmu%20-%5Csigma%2C%20%5Cmu%20&plus;%20%5Csigma%5D">
