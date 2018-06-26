@@ -55,6 +55,9 @@ If we compare the definition of the median <img src="https://latex.codecogs.com/
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%3D%20c">
 </p>
+<p align="right">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cblacksquare">
+</p>
 
 ### Property 2: The range existance of the median
 
