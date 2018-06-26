@@ -23,6 +23,7 @@ Firmally speaking, the median <img src="https://latex.codecogs.com/gif.latex?m">
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20P%28X%20%5Cgeq%20m%29%20%5Cgeq%20%5Cfrac%7B1%7D%7B2%7D%20%5C%3B%20%5Ctext%7Band%7D%20%5C%3B%20P%28X%20%5Cleq%20m%29%20%5Cgeq%20%5Cfrac%7B1%7D%7B2%7D">
 </p>
+
 The median <img src="https://latex.codecogs.com/gif.latex?m"> minimizes the following function:
 <!--
 m = \min\limits_{c} \;f(c) = \min\limits_{c}\; E(|X-c|)
