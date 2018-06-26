@@ -25,9 +25,9 @@ If <img src="https://latex.codecogs.com/gif.latex?X"> is a random variable havin
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%5Cin%20%5B%5Cmu%20-%5Csigma%2C%20%5Cmu%20&plus;%20%5Csigma%5D">
 </p>
 
-First of all, why this is true ? 
+This is an interesting property, but why it is true ? 
 
-First of all we know that:
+First of all, we know that:  
 <!--
 m \in [\mu-\sigma, \mu + \sigma] \iff |\mu - m | \leq \sigma
 -->
@@ -41,7 +41,7 @@ m \in [\mu-\sigma, \mu + \sigma] \iff |\mu - m | \leq \sigma
 &=|E(X - m)|
 \end{align*}
 -->
-
+So let's show the second inequality: <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C%20%5Cleq%20%5Csigma">
 
 
 
