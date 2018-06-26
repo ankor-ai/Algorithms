@@ -159,7 +159,11 @@ Great! We have just shown that:
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%5Cin%20%5B%5Cmu%20-%5Csigma%2C%20%5Cmu%20&plus;%20%5Csigma%5D">
 </p
   
-But why this is useful ?
+But wait a minute. Why this is useful ?
+
+## The binapprox algorithm using Property 2
+
+Well, since we want to approximate the median of large data, we can use the property 2 to narrow the scope of the median search. In other words, if we compute the mean and the standard deviation
 
 ## Example
 
@@ -174,3 +178,15 @@ The median is the average of the 15th and 16th numbers in the ordered list (we c
 In our example, the first 3 bins sum to 9 and the first 4 bins sum to 18, so we know that the median falls into the 4th bin (marked in red), and so it must be between 10 and 11.
 
 We choose the middle (or midpoint) giving an estimate of 10.5.
+
+##  Strengths and weaknesses of binapprox algorithm
+* *Strength*: the runtime of binapprox doesn’t depend on the data’s distribution. It requires O(1) space, and doesn’t perturb the input. The algorithm has O(n) worst-case computational complexity, as it only needs 3 passes through the data:
+  1. one pass to compute the mean and the standard deviation
+  2. one pass to add each data point to its corresponding bin
+  3. one pass to find the median
+* *Weakness*: if the standard deviation is extremely large, the median approximation could be significantly different from the actual median.
+
+
+# References
+* [Ryan J. Tibshirani's paper](http://www.stat.cmu.edu/~ryantibs/papers/median.pdf)
+
