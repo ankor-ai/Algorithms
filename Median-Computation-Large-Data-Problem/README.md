@@ -163,7 +163,7 @@ But wait a minute. Why this is useful ?
 
 ## The binapprox algorithm using Property 2
 
-Well, since we want to approximate the median of large data, we can use the property 2 to narrow the scope of the median search. Before mentioning the pseudocode of binapprox algorithm, let's examine an example:
+Well, since we want to approximate the median of large data, we can use the property 2 to narrow the scope of the median search. Before mentioning the pseudocode of binapprox algorithm, let's examine an example.
 
 ## Example
 
@@ -196,7 +196,7 @@ After describing the binapprox algorithm in the previous example, let's enumerat
 We implemented the binapprox algorithm in Python3 in the file *Binapprox_Algorithm.py*
 
 ##  Strengths and weaknesses of binapprox algorithm
-* *Strength*: the runtime of binapprox doesn’t depend on the data’s distribution. It requires O(1) space, and doesn’t perturb the input. The algorithm has O(n) worst-case computational complexity, as it only needs 3 passes through the data:
+* *Strength*: the runtime of binapprox doesn’t depend on the data’s distribution. It requires **O(1) space complexity**, and doesn’t perturb the input. The algorithm has **O(n) worst-case computational complexity**, as it only needs 3 passes through the data:
   1. one pass to compute the mean and the standard deviation
   2. one pass to add each data point to its corresponding bin
   3. one pass to find the median
