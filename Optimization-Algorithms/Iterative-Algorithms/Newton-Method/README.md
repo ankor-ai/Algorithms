@@ -18,7 +18,7 @@ To guarantee the convergence, this method assume the following assumptions:
 * f is *twice differentiable* (i.e. twice Lipschitz continuously):
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5ClVert%20%5Cnabla%5E%7B2%7Df%28x%29%20-%20%5Cnabla%5E%7B2%7Df%28y%29%20%5ClVert%20%5C%3B%5Cleq%20%5Cgamma%20%5C%3B%20%5ClVert%20x-y%20%5ClVert">
+  <img src="https://latex.codecogs.com/gif.latex?%5CLARGE%20%5ClVert%20%5Cnabla%5E%7B2%7Df%28x%29%20-%20%5Cnabla%5E%7B2%7Df%28y%29%20%5ClVert%20%5C%3B%5Cleq%20%5Cgamma%20%5C%3B%20%5ClVert%20x-y%20%5ClVert" height="35" width="150">
 </p>
 
 * first order stationarity assumption:
