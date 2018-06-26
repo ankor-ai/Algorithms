@@ -6,7 +6,7 @@ Calculating the median requires all the data to be in memory at once. This is an
 
 Even with a machine with lots of RAM, it's not going to be possible to find the median of billions and billions of real numbers.
 
-This isn’t an issue for calculating the mean, since the sum only requires one real number to be added at a time. You can load a batch of real numbers, add them to the sum, and then reuse the memory. Since the sum is only ever the size of a single real number, you’ll never run out of memory.
+This is not an issue for calculating the mean, since the sum only requires one real number to be added at a time. You can load a batch of real numbers, add them to the sum, and then reuse the memory. Since the sum is only ever the size of a single real number, you’ll never run out of memory.
 
 If there were a way to calculate a "running median" you could save space by only having a batch of real numbers loaded at a time. Unfortunately, there’s no way to do an exact running median, but there are ways to do it approximately.
 
