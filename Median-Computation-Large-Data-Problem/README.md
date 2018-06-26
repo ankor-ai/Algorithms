@@ -4,7 +4,7 @@
 
 Calculating the median requires all the data to be in memory at once. This is an issue in typical astrophysics calculations, which may use hundreds of thousands of exoplanets' dictionaries.
 
-Even with a machine with lots of RAM, it's not going to be possible to find the median of billions of billions of real numbers.
+Even with a machine with lots of RAM, it's not going to be possible to find the median of billions and billions of real numbers.
 
 This isn’t an issue for calculating the mean, since the sum only requires one real number to be added at a time. You can load a batch of real numbers, add them to the sum, and then reuse the memory. Since the sum is only ever the size of a single real number, you’ll never run out of memory.
 
