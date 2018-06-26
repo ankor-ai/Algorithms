@@ -15,9 +15,16 @@ The [binapprox algorithm](http://www.stat.cmu.edu/~ryantibs/papers/median.pdf) d
 
 ## The binapprox algorithm
 
-In order to find approximately the median, this algorithm uses a very interesting property of the median
+In order to find approximately the median, this algorithm uses two interesting properties of the median
 
-### The range existance of the median
+### Property 1:
+
+The median <img src="https://latex.codecogs.com/gif.latex?m"> of a random variable <img src="https://latex.codecogs.com/gif.latex?X"> minimizes the following function:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%3D%20%5Cmin%5Climits_%7Bc%7D%20%5C%3B%20E%28%7CX-c%7C%29">
+</p>
+
+### Property 2: The range existance of the median
 
 If <img src="https://latex.codecogs.com/gif.latex?X"> is a random variable having mean <img src="https://latex.codecogs.com/gif.latex?%5Cmu">, variance <img src="https://latex.codecogs.com/gif.latex?%5Csigma%5E2">, and median <img src="https://latex.codecogs.com/gif.latex?m">, then:
 
@@ -59,7 +66,7 @@ Now, since the absolute value function on the real numbers is convex, then we ca
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctext%7Bf%20is%20convex%7D%20%5Ciff%20f%28E%28X%29%29%20%5Cleq%20E%28f%28X%29%29">
 </p>
- Thus, we have:
+ Thus, by taking f as the absolute value function, we have:
  <!--
 \begin{align*}
 |\mu - m| &= |E(X - m)|\\
