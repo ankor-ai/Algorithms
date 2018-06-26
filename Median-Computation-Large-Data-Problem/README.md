@@ -146,10 +146,20 @@ At this stage, we apply again the Jensen's inequality for the concave function f
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%3D%20E%28%5Csqrt%7B%20%28X-%5Cmu%29%5E2%7D%29%5C%5C%20%26%5Cleq%20%5Csqrt%7BE%28X-%5Cmu%29%5E2%7D%20%5Cend%7Balign*%7D">
 </p>
 
-We are almost done. We know that:
+Finally we have, just by the definition of the standart deviation:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%3D%20%5Cleq%20%5Csqrt%7BE%28X-%5Cmu%29%5E2%7D%5C%5C%20%26%3D%20%5Csigma%20%5Cend%7Balign*%7D">
+</p>
+<p align="right">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cblacksquare">
+</p>
 
-
-
+Great! We have just shown that:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%5Cin%20%5B%5Cmu%20-%5Csigma%2C%20%5Cmu%20&plus;%20%5Csigma%5D">
+</p
+  
+But why this is useful ?
 
 ## Example
 
