@@ -181,7 +181,7 @@ We choose the middle (or midpoint) giving an estimate of 10.5.
 
 ## Binapprox algorithm pseudo-code
 
-After describing the binapprox algorithm in the previous example, let's enumerate explicitly the different steps of this algorithm:
+After describing the binapprox algorithm in the previous example, let's enumerate explicitly its different steps:
 
 ```
 1. Compute the mean µ and standard deviation σ
