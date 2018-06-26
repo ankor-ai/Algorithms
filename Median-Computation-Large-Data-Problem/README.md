@@ -43,13 +43,13 @@ So let's show the second inequality:
 Let's start by rewriting step by step what  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%7C%5Cmu%20-%20m%20%7C">  is.
 <!--
 \begin{align*}
-|\mu - m| &= |E(m) - m|\\
+|\mu - m| &= |E(X) - m|\\
 &=|E(X) - E(m)|\\
 &=|E(X - m)|
 \end{align*}
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%3D%20%7CE%28m%29%20-%20m%7C%5C%5C%20%26%3D%7CE%28X%29%20-%20E%28m%29%7C%5C%5C%20%26%3D%7CE%28X%20-%20m%29%7C%20%5Cend%7Balign*%7D">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%7C%5Cmu%20-%20m%7C%20%26%3D%20%7CE%28X%29%20-%20m%7C%5C%5C%20%26%3D%7CE%28X%29%20-%20E%28m%29%7C%5C%5C%20%26%3D%7CE%28X%20-%20m%29%7C%20%5Cend%7Balign*%7D">
 </p>
 
 
