@@ -25,6 +25,26 @@ If <img src="https://latex.codecogs.com/gif.latex?X"> is a random variable havin
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%5Cin%20%5B%5Cmu%20-%5Csigma%2C%20%5Cmu%20&plus;%20%5Csigma%5D">
 </p>
 
+First of all, why this is true ? 
+
+First of all we know that:
+<!--
+m \in [\mu-\sigma, \mu + \sigma] \iff |\mu - m | \leq \sigma
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%5Cin%20%5B%5Cmu-%5Csigma%2C%20%5Cmu%20&plus;%20%5Csigma%5D%20%5Ciff%20%7C%5Cmu%20-%20m%20%7C%20%5Cleq%20%5Csigma">
+</p>
+<!--
+\begin{align*}
+|\mu - m| &= |E(m) - m|\\
+&=|E(X) - E(m)|\\
+&=|E(X - m)|
+\end{align*}
+-->
+
+
+
+
 ## Example
 
 Say we have a list of 30 numbers between 7 and 16 and its histogram is:
