@@ -198,24 +198,24 @@ In a smiliar way as for the orthonormal basis, we can rewrite the previous formu
 \begin{align*}
 \|\vec{v}\|^2 &=
 \begin{bmatrix}
-    v_{1} & v_{2} 
+    \tilde{v_{1}} & \tilde{v_{2}} 
 \end{bmatrix}
 \begin{bmatrix}
     {\color{DarkOrange}\tilde{\vec{e_1}}} \cdot {\color{DarkOrange}\tilde{\vec{e_1}}} & {\color{DarkOrange}\tilde{\vec{e_2}}} \cdot {\color{DarkOrange}\tilde{\vec{e_1}}} \\
     {\color{DarkOrange}\tilde{\vec{e_1}}} \cdot {\color{DarkOrange}\tilde{\vec{e_2}}} & {\color{DarkOrange}\tilde{\vec{e_2}}} \cdot {\color{DarkOrange}\tilde{\vec{e_2}}}
 \end{bmatrix}
 \begin{bmatrix}
-    v_{1} \\ v_{2} 
+    \tilde{v_{1}} \\ \tilde{v_{2}} 
 \end{bmatrix} \\&= 
 \begin{bmatrix}
-    v_{1} & v_{2} 
+    \tilde{v_{1}} & \tilde{v_{2}}
 \end{bmatrix} 
 \begin{bmatrix}
     {\color{DarkOrange}5} & {\color{DarkOrange}-3/4} \\
     {\color{DarkOrange}-3/4} & {\color{DarkOrange}5/16}
 \end{bmatrix}\;
 \begin{bmatrix}
-    v_{1} \\ v_{2} 
+    \tilde{v_{1}} \\ \tilde{v_{2}}
 \end{bmatrix} \\
 &= \quad \;\;\vec{v}^T\;\;\,
 \begin{bmatrix}
@@ -226,8 +226,10 @@ In a smiliar way as for the orthonormal basis, we can rewrite the previous formu
 \end{align*}
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%5C%7C%5Cvec%7Bv%7D%5C%7C%5E2%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20v_%7B1%7D%20%26%20v_%7B2%7D%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%5C%5C%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20v_%7B1%7D%20%5C%5C%20v_%7B2%7D%20%5Cend%7Bbmatrix%7D%20%5C%5C%26%3D%20%5Cbegin%7Bbmatrix%7D%20v_%7B1%7D%20%26%20v_%7B2%7D%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20%7B%5Ccolor%7BDarkOrange%7D5%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%5C%5C%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D5/16%7D%20%5Cend%7Bbmatrix%7D%5C%3B%20%5Cbegin%7Bbmatrix%7D%20v_%7B1%7D%20%5C%5C%20v_%7B2%7D%20%5Cend%7Bbmatrix%7D%20%5C%5C%20%26%3D%20%5Cquad%20%5C%3B%5C%3B%5Cvec%7Bv%7D%5ET%5C%3B%5C%3B%5C%2C%20%5Cbegin%7Bbmatrix%7D%20%7B%5Ccolor%7BDarkOrange%7D5%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%5C%5C%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D5/16%7D%20%5Cend%7Bbmatrix%7D%5C%2C%20%5C%3B%5C%3B%5C%3B%5Cvec%7Bv%7D%20%5Cend%7Balign*%7D">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%5C%7C%5Cvec%7Bv%7D%5C%7C%5E2%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20%5Ctilde%7Bv_%7B1%7D%7D%20%26%20%5Ctilde%7Bv_%7B2%7D%7D%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%5C%5C%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20%5Ctilde%7Bv_%7B1%7D%7D%20%5C%5C%20%5Ctilde%7Bv_%7B2%7D%7D%20%5Cend%7Bbmatrix%7D%20%5C%5C%26%3D%20%5Cbegin%7Bbmatrix%7D%20%5Ctilde%7Bv_%7B1%7D%7D%20%26%20%5Ctilde%7Bv_%7B2%7D%7D%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20%7B%5Ccolor%7BDarkOrange%7D5%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%5C%5C%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D5/16%7D%20%5Cend%7Bbmatrix%7D%5C%3B%20%5Cbegin%7Bbmatrix%7D%20%5Ctilde%7Bv_%7B1%7D%7D%20%5C%5C%20%5Ctilde%7Bv_%7B2%7D%7D%20%5Cend%7Bbmatrix%7D%20%5C%5C%20%26%3D%20%5Cquad%20%5C%3B%5C%3B%5Cvec%7Bv%7D%5ET%5C%3B%5C%3B%5C%2C%20%5Cbegin%7Bbmatrix%7D%20%7B%5Ccolor%7BDarkOrange%7D5%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%5C%5C%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D5/16%7D%20%5Cend%7Bbmatrix%7D%5C%2C%20%5C%3B%5C%3B%5C%3B%5Cvec%7Bv%7D%20%5Cend%7Balign*%7D">
 </p>
+
+### The optimization problem behind the natural gradient
 
 <!-- 
 Although
