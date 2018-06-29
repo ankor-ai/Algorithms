@@ -120,10 +120,21 @@ Thus we have:
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%5C%7C%5Cvec%7Bv%7D%5C%7C%5E2%20%26%3D%20%5Cvec%7Bv%7D%5C%20%5Ccdot%20%5Cvec%7Bv%7D%5C%5C%20%26%3D%20%28v_1%20%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_1%7D%7D%2C%20v_2%20%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_2%7D%7D%29%20%5Ccdot%20%28v_1%20%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_1%7D%7D%2C%20v_2%20%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_2%7D%7D%29%5C%5C%20%26%3D%20v_1%5E2%20%5C%3B%28%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_1%7D%7D%2C%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_2%7D%7D%29%20&plus;%20v_1%20v_2%20%5C%3B%28%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_1%7D%7D%2C%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_2%7D%7D%29%20&plus;%20v_2%20v_1%20%5C%3B%28%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_2%7D%7D%2C%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_1%7D%7D%29%20&plus;%20v_2%5E2%5C%2C%20%28%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_2%7D%7D%2C%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_2%7D%7D%29%5C%5C%20%26%3D%20v_1%5E2%20&plus;%20v_2%5E2%5C%5C%20%5Cend%7Balign*%7D">
 </p>
 
-and find ourselves applying the Pythagorean theorem again since we are using an orthonomal basis. This tells us that the Pythagorean theorem is a special case of the previous formula.
+and we find ourselves applying the Pythagorean theorem again since we are using an orthonomal basis. This tells us that the Pythagorean theorem is a special case of the previous formula.
 
-Cool. What if we ask you to compute the norm of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D"> using the non orthonormal basis <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D"> ? Well, this could be done in two steps:
+Cool. What if we ask you to compute the norm of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D"> using the non orthonormal basis <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D"> ?
 
+Well, we can keep using the previous formula in the new basis <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D">:
+<!--
+\begin{align*}
+\|\vec{v}\|^2 &=  \vec{v}\ \cdot \vec{v}\\
+&=  (\tilde{v_1} \,{\color{DarkOrange}\tilde{\vec{e_1}}}, \tilde{v_2} \,{\color{DarkOrange}\tilde{\vec{e_2}}}) \cdot (\tilde{v_1} \,{\color{DarkOrange}\tilde{\vec{e_1}}}, \tilde{v_2} \,{\color{DarkOrange}\tilde{\vec{e_2}}})\\
+&=  \tilde{v_1}^2 \;({\color{DarkOrange}\tilde{\vec{e_1}}},\,{\color{DarkOrange}\tilde{\vec{e_2}}}) + \tilde{v_1} \tilde{v_2} \;({\color{DarkOrange}\tilde{\vec{e_1}}},\,{\color{DarkOrange}\tilde{\vec{e_2}}}) + \tilde{v_2} \tilde{v_1} \;({\color{DarkOrange}\tilde{\vec{e_2}}},\,{\color{DarkOrange}\tilde{\vec{e_1}}}) + \tilde{v_2}^2\, ({\color{DarkOrange}\tilde{\vec{e_2}}},\,{\color{DarkOrange}\tilde{\vec{e_2}}})
+\end{align*}
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%5C%7C%5Cvec%7Bv%7D%5C%7C%5E2%20%26%3D%20%5Cvec%7Bv%7D%5C%20%5Ccdot%20%5Cvec%7Bv%7D%5C%5C%20%26%3D%20%28%5Ctilde%7Bv_1%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%2C%20%5Ctilde%7Bv_2%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%20%5Ccdot%20%28%5Ctilde%7Bv_1%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%2C%20%5Ctilde%7Bv_2%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%5C%5C%20%26%3D%20%5Ctilde%7Bv_1%7D%5E2%20%5C%3B%28%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%2C%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%20&plus;%20%5Ctilde%7Bv_1%7D%20%5Ctilde%7Bv_2%7D%20%5C%3B%28%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%2C%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%20&plus;%20%5Ctilde%7Bv_2%7D%20%5Ctilde%7Bv_1%7D%20%5C%3B%28%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%2C%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%29%20&plus;%20%5Ctilde%7Bv_2%7D%5E2%5C%2C%20%28%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%2C%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%20%5Cend%7Balign*%7D">
+</p>
 
 <!-- 
 Although
