@@ -312,6 +312,10 @@ while the best direction that the standard gradient descent take is:
 
 In other words, the natural gradient is a generalization of the standard gradient descent from the Euclidian geometry to the Riemannian geometry. Practically, this generalization involves a new term called the metric tensor which depends on the structure of the parameter space. That's it!
 
+## Pros and cons:
+
+If the function f is quadratic, then x + <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon"> is the exact minimizer of f. If the function f is nearly quadratic, intuition suggests that <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x&plus;%5Cupsilon"> should be a very good estimate of the minimizer of f, i.e., <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x%5E*">. In other words, the performance of Newton's method depends on how good the quadratic approximation is.
+
 <!-- 
 Although
 the natural gradient is local in nature and only depends
@@ -322,21 +326,6 @@ problem to problem, and there exist several practical cases
 where this information is easily o
 
 -->
-
----
-We define the optimization problem as:
-<!--
-\textbf{x}^* = \min\limits_{\textbf{x}} \;f(\textbf{x})
--->
-<p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bx%7D%5E*%20%3D%20%5Cmin%5Climits_%7B%5Ctextbf%7Bx%7D%7D%20%5C%3Bf%28%5Ctextbf%7Bx%7D%29">
-</p>
-
-
-
-## Pros and cons:
-
-If the function f is quadratic, then x + <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon"> is the exact minimizer of f. If the function f is nearly quadratic, intuition suggests that <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x&plus;%5Cupsilon"> should be a very good estimate of the minimizer of f, i.e., <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x%5E*">. In other words, the performance of Newton's method depends on how good the quadratic approximation is.
 
 
 ## Implementation
