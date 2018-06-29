@@ -259,7 +259,7 @@ with respect to <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctex
 \|\textbf{a}\|^2 = \textbf{a}^T \,\textbf{G} \;\textbf{a}^T
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5C%7C%5Ctextbf%7Ba%7D%5C%7C%5E2%20%3D%20%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D%5ET">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5C%7C%5Ctextbf%7Ba%7D%5C%7C%5E2%20%3D%20%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D">
  </p>
  
 <!-- 
