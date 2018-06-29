@@ -96,6 +96,17 @@ Let's consider the vector <img src="https://latex.codecogs.com/gif.latex?%5Csmal
   <img src="./images/two_bases_one_vector.png">
 </p>
 
+Thus, we can write the vector <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D"> in the two basis as follows:
+<!--
+\begin{align*}
+\vec{v} &=  (v_1 \,{\color{Blue}\vec{e_1}}, v_2 \,{\color{Blue}\vec{e_2}})\\
+&=  (\tilde{v_1} \,{\color{DarkOrange}\tilde{\vec{e_1}}}, \tilde{v_2} \,{\color{DarkOrange}\tilde{\vec{e_2}}})
+\end{align*}\\
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%5Cvec%7Bv%7D%20%26%3D%20%28v_1%20%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_1%7D%7D%2C%20v_2%20%5C%2C%7B%5Ccolor%7BBlue%7D%5Cvec%7Be_2%7D%7D%29%5C%5C%20%26%3D%20%28%5Ctilde%7Bv_1%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%2C%20%5Ctilde%7Bv_2%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%20%5Cend%7Balign*%7D%5C%5C">
+</p>
+
 To compute the norm of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D">, the most obvious way is to apply the Pythagoras theorem:
 
 <p align="center">
