@@ -82,7 +82,15 @@ So we want to understand how the term <img src="https://latex.codecogs.com/gif.l
 
 To do so let's study a basic example.
 
-### Example
+### Example: how do we get the length of a vector ?
+
+Let's consider the <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cmathbb%7BR%7D%5E2"> with the two different bases:
+<!--
+{\color{Blue} (\;\tilde{\vec{e_1}}, \tilde{\vec{e_2}}\;)}
+{\color{DarkOrange} (\;\tilde{\vec{e_1}}, \tilde{\vec{e_2}}\;)}
+-->
+* <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BBlue%7D%20%28%5Cvec%7Be_1%7D%2C%20%5Cvec%7Be_2%7D%29%7D">:
+* <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BBlue%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D">
 
 <p align="center">
   <img src="./images/two_bases_one_vector.png">
