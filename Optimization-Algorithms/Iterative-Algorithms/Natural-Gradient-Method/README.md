@@ -302,6 +302,16 @@ or
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%5Ctextbf%7Ba%7D%20%26%3D%20%5Cfrac%7B%5Ceta%7D%7B%5Clambda%7D%20%5C%2C%20%5Ctextbf%7BG%7D%5E%7B-1%7D%5C%2C%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%20%5C%5C%26%3D%20%5Calpha%5C%3B%20%5Ctextbf%7BG%7D%5E%7B-1%7D%5C%2C%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%20%5Cend%7Balign*%7D">
 </p>
 
+while the best direction that the standard gradient descent take is:
+<!--
+\textbf{a} = \alpha \,\nabla f(\textbf{w})
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Ba%7D%20%3D%20%5Calpha%20%5C%2C%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29">
+</p>
+
+In other words, the natural gradient is a generalization of the standard gradient descent from the Euclidian geometry to the Riemannian geometry. Practically, this generalization involves a new term called the metric tensor which depends on the structure of the parameter space. That's it!
+
 <!-- 
 Although
 the natural gradient is local in nature and only depends
@@ -323,36 +333,6 @@ We define the optimization problem as:
 </p>
 
 
-
-## Newton's method
-
-The Newton's method approximate the function f using a second-order Tayolor expansion:
-<!--
-f(x+\upsilon) \approx \hat{f}(x+\upsilon) = f(x) + \nabla f(x)^T \upsilon + \frac{1}{2}\; \upsilon^T \;\nabla^2 f(x)\; \upsilon
--->
-<p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20f%28x&plus;%5Cupsilon%29%20%5Capprox%20%5Chat%7Bf%7D%28x&plus;%5Cupsilon%29%20%3D%20f%28x%29%20&plus;%20%5Cnabla%20f%28x%29%5ET%20%5Cupsilon%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%5C%3B%20%5Cupsilon%5ET%20%5C%3B%5Cnabla%5E2%20f%28x%29%5C%3B%20%5Cupsilon">
-</p>
-
-which is a convex quadratic function of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon">. In other words, the newton's method tries to find what should be the direction <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon"> added to the point x to minimize the second-order approximation of f at x, <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20f%28x&plus;%5Cupsilon%29">.
-
-In order to do find the best <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon">, we set the derivative of the quadratic approximation to 0 and solve it with respect to <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon">:
-<!--
-\textbf{0} = \nabla f(x+\upsilon) \approx \nabla \hat{f}(x+\upsilon) = \nabla f(x) + \nabla^2 f(x)\; \upsilon
--->
-<p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7B0%7D%20%3D%20%5Cnabla%20f%28x&plus;%5Cupsilon%29%20%5Capprox%20%5Cnabla%20%5Chat%7Bf%7D%28x&plus;%5Cupsilon%29%20%3D%20%5Cnabla%20f%28x%29%20&plus;%20%5Cnabla%5E2%20f%28x%29%5C%3B%20%5Cupsilon">
-</p>
-
-Thus, we can conclude that the best <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon"> is:
-<!--
-\upsilon^* = -\big[ \nabla^2 f(x) \big]^{-1} \;\nabla f(x)
--->
-<p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cupsilon%5E*%20%3D%20-%5Cbig%5B%20%5Cnabla%5E2%20f%28x%29%20%5Cbig%5D%5E%7B-1%7D%20%5C%3B%5Cnabla%20f%28x%29">
-</p>
-
-<img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon%5E*"> is know as the Newton step. It is the descent direction that Newton's method uses to minimize f.
 
 ## Pros and cons:
 
