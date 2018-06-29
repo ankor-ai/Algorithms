@@ -3,7 +3,7 @@
 ## Description
 This repository provides the description and the implementation of the natural gradient method.
 
-## Assumptions of the Newton's method
+## Assumptions of the natural gradient method
 
 To guarantee the convergence, this method assume the following assumptions:
 
@@ -241,6 +241,11 @@ Now, it is a great time to introduce the optimization problem of the natural gra
 
 ### The optimization problem behind the natural gradient
 
+Given a function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29">, we would like to find the best direction in the parameter space of  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bdw%7D"> to take in order to decrease the function.
+
+Let's formalize this sentence.
+
+Our goal is to find a direction <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bdw%7D">.
 <!-- 
 Although
 the natural gradient is local in nature and only depends
