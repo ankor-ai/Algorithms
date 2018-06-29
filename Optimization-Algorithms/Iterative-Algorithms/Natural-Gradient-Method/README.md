@@ -68,13 +68,13 @@ Before understanding the natural gradient equation, let's just see what does it 
   <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%28k&plus;1%29%20%3D%20%5Ctextbf%7Bw%7D%28k%29%20-%20%5Ceta%20%5C%3B%20%5Ctextbf%7BG%7D%5E%7B-1%7D%28%5Ctextbf%7Bw%7D%28k%29%29%5C%3B%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%7D%28k%29%29%7D%7B%5Cpartial%20%5Ctextbf%7Bw%7D%7D">
 </p>
 
-Well, this looks very similar to the gradient descent equation without the new term <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7BG%7D%5E%7B-1%7D%28%5Ctextbf%7Bw%7D%28k%29%29"> which is a matrix that multiplies the gradient to adjust the gradient of each parameter that should be substracted from <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%28k%29">.
+Well, this looks very similar to the gradient descent equation without the new term <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7BG%7D%5E%7B-1%7D%28%5Ctextbf%7Bw%7D%28k%29%29"> which is a matrix that multiplies the gradient to adjust the gradient of each parameter <img src="https://latex.codecogs.com/gif.latex?w_i%28k%29"> that should be substracted from <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%28k%29">.
 
 In the rest of this tutorial, we will explain from where is this matrix coming and what advantage does it provide comparing to the standard gradient descent. It is time to dive into the technical details of this intuition :)
 
 ## Understanding the natural gradient:
 
-We want to find the best distance to decrease the function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> at each direction. Since <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> is a high dimensional function, we can imagine intuitively a high dimensional curved function where the shortest distance between two points is not a straight line anymore. In other words, the fundamental notion of distance as defined in the Euclidian geometry is no longer valid because it does not take into account the characteristics of the parameter space.
+We want to find the best distance to decrease the function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> in each direction. Since <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> is a high dimensional function, we can imagine intuitively a high dimensional curved function where the shortest distance between two points is not a straight line anymore. In other words, the fundamental notion of distance as defined in the Euclidian geometry is no longer valid because it does not take into account the characteristics of the parameter space.
 
 In other words, we need to make sure to have the accurate distance metric to navigate in the parameter space. This means that we should be able to compute the shortest distance between two points in our parameter space even if it is not a straight line. For instance, how can we measure the distance between two cities on our spherical earth. Well, these types of problems can be solved by using the [Riemannian geometry](https://en.wikipedia.org/wiki/Riemannian_geometry). Euclidian geometry holds only when the plan is flat.
 
@@ -229,6 +229,16 @@ In a smiliar way as for the orthonormal basis, we can rewrite the previous formu
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%5C%7C%5Cvec%7Bv%7D%5C%7C%5E2%20%26%3D%20%5Cbegin%7Bbmatrix%7D%20%5Ctilde%7Bv_%7B1%7D%7D%20%26%20%5Ctilde%7Bv_%7B2%7D%7D%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%5C%5C%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%5Ccdot%20%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20%5Ctilde%7Bv_%7B1%7D%7D%20%5C%5C%20%5Ctilde%7Bv_%7B2%7D%7D%20%5Cend%7Bbmatrix%7D%20%5C%5C%26%3D%20%5Cbegin%7Bbmatrix%7D%20%5Ctilde%7Bv_%7B1%7D%7D%20%26%20%5Ctilde%7Bv_%7B2%7D%7D%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20%7B%5Ccolor%7BDarkOrange%7D5%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%5C%5C%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D5/16%7D%20%5Cend%7Bbmatrix%7D%5C%3B%20%5Cbegin%7Bbmatrix%7D%20%5Ctilde%7Bv_%7B1%7D%7D%20%5C%5C%20%5Ctilde%7Bv_%7B2%7D%7D%20%5Cend%7Bbmatrix%7D%20%5C%5C%20%26%3D%20%5Cquad%20%5C%3B%5C%3B%5Cvec%7Bv%7D%5ET%5C%3B%5C%3B%5C%2C%20%5Cbegin%7Bbmatrix%7D%20%7B%5Ccolor%7BDarkOrange%7D5%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%5C%5C%20%7B%5Ccolor%7BDarkOrange%7D-3/4%7D%20%26%20%7B%5Ccolor%7BDarkOrange%7D5/16%7D%20%5Cend%7Bbmatrix%7D%5C%2C%20%5C%3B%5C%3B%5C%3B%5Cvec%7Bv%7D%20%5Cend%7Balign*%7D">
 </p>
 
+where the values 5, -3/4 and 5/16 of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7BG%7D"> are computed based on the given example.
+
+Before we describe the optimization problem behind the natural gradient, let's recap what we have learnt so far:
+1. we need to adjust the standard gradient descent by substracting a different portion of the gradient for each parameter <img src="https://latex.codecogs.com/gif.latex?w_i%28k%29">.
+2. Thus, we need mesure the best distance to decrease the function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> in each direction.
+3. This is why we need to be able to measure the distance even if the plan is not flat by taking into consideration the fact that our parameter space can be curved. We do that by using the Riemannian geometry.
+4. This means that each time we want to compute a distance, the matrix of all pairs of dot products between the parameter space's basis vectors should be taken into account. We called this matrix <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7BG%7D">. This matrix is called the [metric tensor](https://en.wikipedia.org/wiki/Metric_tensor). It is a very well known tensor in differential geometry and extensively used in general relativity.
+
+Now, it is a great time to introduce the optimization problem of the natural gradient :)
+
 ### The optimization problem behind the natural gradient
 
 <!-- 
@@ -298,5 +308,6 @@ python3 Newton_Method.py
 ```
 
 ## References
-* [Newton's method section of Stephen Boyd's book](http://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf#page=498)
-* [Stephen Boyd's Stanford lecture](https://www.youtube.com/watch?v=sTCtkkqrY8A#t=1924)
+* [Amari's Paper - Why Natural Gradient?](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.76.7538&rep=rep1&type=pdf): this is a light paper that focuses on the intuition and examples to understand natural gradient.
+* [Amari reference paper about natural gradient](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.452.7280&rep=rep1&type=pdf): this is the original paper to understand natural gradient.
+* [The Youtube playlist "What is a Tensor?"](https://www.youtube.com/playlist?list=PLRlVmXqzHjUQARA37r4Qw3SHPqVXgqO6c): this is a great series of lessons intended to assist those who want to learn about the fundamental background behind the theory of general relativity. I highly recommend it.
