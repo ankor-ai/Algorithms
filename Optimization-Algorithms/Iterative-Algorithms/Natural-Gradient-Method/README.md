@@ -243,7 +243,10 @@ Now, it is a great time to introduce the optimization problem of the natural gra
 
 Given a function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29">, we would like to find the best direction <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bdw%7D"> in the parameter space of  <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D"> to take in order to decrease the function.
 
-Let's formalize this sentence. We are looking for the best direction <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bdw%7D%20%3D%20%5Ceta%20%5C%3B%20%5Ctextbf%7Ba%7D%5C%5C">
+Let's formalize this sentence. We are looking for the best direction <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bdw%7D"> that can be written as:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bdw%7D%20%3D%20%5Ceta%20%5C%3B%20%5Ctextbf%7Ba%7D%5C%5C">
+</p>
 
 Our goal is to find a direction <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bdw%7D">.
 <!-- 
