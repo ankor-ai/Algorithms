@@ -284,6 +284,15 @@ We want to find the best <img src="https://latex.codecogs.com/gif.latex?%5Csmall
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%7D%7B%5Cpartial%20%5Ctextbf%7Ba%7D%7D%20%3D%20%5Ctextbf%7B0%7D%20%3D%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20-%20%5Clambda%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D">
 </p>
 
+which gives us:
+<!--
+\nabla f(\textbf{w})^T = \frac{\lambda}{\eta} \,\textbf{G} \;\textbf{a}
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20%3D%20%5Cfrac%7B%5Clambda%7D%7B%5Ceta%7D%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D">
+</p>
+
+or
 
 <!-- 
 Although
