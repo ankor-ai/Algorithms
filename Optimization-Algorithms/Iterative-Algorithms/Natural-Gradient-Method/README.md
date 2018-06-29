@@ -1,22 +1,7 @@
-# Newton's Method
+# Natural Gradient Method
 
 ## Description
 This repository provides the description and the implementation of the natural gradient method.
-
-First, before digging into the natural gradient method, we should review the basic concepts behind standard gradient descent and understand some of its performance limitations.
-
-
-
-
-Newton's method is an optimization algorithm which, in the convex setting, iteratively minimizes **quadratic approximations** to the objective function. It can be impractical for high-dimensional problems because it requires inverting the Hessian matrix, but many highly effective optimization algorithms can be viewed as approximations to Newton's method.
-
-We define the optimization problem as:
-<!--
-\textbf{x}^* = \min\limits_{\textbf{x}} \;f(\textbf{x})
--->
-<p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bx%7D%5E*%20%3D%20%5Cmin%5Climits_%7B%5Ctextbf%7Bx%7D%7D%20%5C%3Bf%28%5Ctextbf%7Bx%7D%29">
-</p>
 
 ## Assumptions of the Newton's method
 
@@ -39,6 +24,31 @@ To guarantee the convergence, this method assume the following assumptions:
 </p>
 
 * the Hessian of f is positive definite (i.e. all the eigenvalues of the Hessian are strictly positive)
+
+Now that we defined the assumption of the natural gradient method, and before digging into its technical details, we should review the basic concepts behind standard gradient descent and understand some of its performance limitations.
+
+## Review of the standard gradient descent method
+
+To describe standard gradient descent method, we consider a function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> to minimize with respect to its parameters:
+<!--
+\textbf{w}(k) = [\;w_1(k), w_2(k), \dots, w_n(k)\;]^T
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%28k%29%20%3D%20%5B%5C%3Bw_1%28k%29%2C%20w_2%28k%29%2C%20%5Cdots%2C%20w_n%28k%29%5C%3B%5D%5ET">
+</p>
+
+where <img src="https://latex.codecogs.com/gif.latex?w_i%28k%29"> is the ith parameter value at time k.
+
+
+We define the optimization problem as:
+<!--
+\textbf{x}^* = \min\limits_{\textbf{x}} \;f(\textbf{x})
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bx%7D%5E*%20%3D%20%5Cmin%5Climits_%7B%5Ctextbf%7Bx%7D%7D%20%5C%3Bf%28%5Ctextbf%7Bx%7D%29">
+</p>
+
+
 
 ## Newton's method
 
