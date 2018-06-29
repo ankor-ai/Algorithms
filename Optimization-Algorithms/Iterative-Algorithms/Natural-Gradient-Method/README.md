@@ -270,12 +270,16 @@ Now we have a classical constrained optimization which can be solved with the [L
 
 The Lagrangean multiplier method adds the constraint to the initial optimization function <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29">:
 <!--
-f(\textbf{w + dw}) = f(\textbf{w}) + \eta \; \nabla f(\textbf{w})^T \textbf{a} + \lambda \,\textbf{a}^T \,\textbf{G} \;\textbf{a}
+f(\textbf{w + dw}) = f(\textbf{w}) + \eta \; \nabla f(\textbf{w})^T \textbf{a} + {\color{DarkGreen} \lambda \,\textbf{a}^T \,\textbf{G} \;\textbf{a}}
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%20%3D%20f%28%5Ctextbf%7Bw%7D%29%20&plus;%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20%5Ctextbf%7Ba%7D%20&plus;%20%5Clambda%20%5C%2C%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%20%3D%20f%28%5Ctextbf%7Bw%7D%29%20&plus;%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20%5Ctextbf%7Ba%7D%20&plus;%20%7B%5Ccolor%7BDarkGreen%7D%20%5Clambda%20%5C%2C%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D%7D">
 </p>
 
+We want to find the best <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7Ba%7D"> that minimize <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29">. Thus we samply set its gradient with respect to <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7Ba%7D"> to 0:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%20%3D%20f%28%5Ctextbf%7Bw%7D%29%20&plus;%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20%5Ctextbf%7Ba%7D%20&plus;%20%7B%5Ccolor%7BDarkGreen%7D%20%5Clambda%20%5C%2C%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D%7D">
+</p>
 
 
 <!-- 
