@@ -264,7 +264,10 @@ with respect to <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctex
  
 Now we see why we introduced the metric tensor <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7BG%7D"> in the previous section :)
  
-Now we have a classical constrained optimization which is can be solved with the [Lagrangean multiplier method"](https://en.wikipedia.org/wiki/Lagrange_multiplier). This is a very known method. If you don't know about it, you can easily understand it. [Just google it](http://lmgtfy.com/?q=Lagrange+multiplier)!
+Now we have a classical constrained optimization which can be solved with the [Lagrangean multiplier method"](https://en.wikipedia.org/wiki/Lagrange_multiplier). This is a very known method. If you don't know about it, you can easily understand it. [Just google it](http://lmgtfy.com/?q=Lagrange+multiplier)!
+
+The Lagrangean multiplier method adds the constraint to the initial optimization function:
+
 
 
 <!-- 
