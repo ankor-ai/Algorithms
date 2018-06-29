@@ -84,17 +84,31 @@ To do so let's study a basic example.
 
 ### Example: how do we get the length of a vector ?
 
-Let's consider the <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cmathbb%7BR%7D%5E2"> with the two different bases:
+Let's consider the vector <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D"> in <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cmathbb%7BR%7D%5E2"> with the two different bases:
 <!--
 {\color{Blue} (\;\vec{e_1}, \vec{e_2}\;)}
 {\color{DarkOrange} (\;\tilde{\vec{e_1}}, \tilde{\vec{e_2}}\;)}
 -->
-* <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BBlue%7D%20%28%5C%3B%5Cvec%7Be_1%7D%2C%20%5Cvec%7Be_2%7D%5C%3B%29%7D">:
-* <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D">
+* <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BBlue%7D%20%28%5C%3B%5Cvec%7Be_1%7D%2C%20%5Cvec%7Be_2%7D%5C%3B%29%7D">: an orthonormal basis.
+* <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D">: a non orthonomal basis.
 
 <p align="center">
   <img src="./images/two_bases_one_vector.png">
 </p>
+
+To compute the norm of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D">, the most obvious way is to apply the Pythagoras theorem:
+
+<p align="center">
+  <img src="./images/two_bases_one_vector_pythagoras.png">
+</p>
+
+Or simply by remembering the fact that:
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5C%7C%5Cvec%7Bv%7D%5C%7C%5E2%20%3D%20%5Cvec%7Bv%7D%5C%20%5Ccdot%20%5Cvec%7Bv%7D">
+</p>
+
+
+Cool. What if we ask you to do it without using the non orthonormal basis <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D"> ? Well, this could be done in two steps:
 
 
 <!-- 
