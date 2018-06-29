@@ -40,6 +40,15 @@ To describe standard gradient descent method, we consider a function <img src="h
 where <img src="https://latex.codecogs.com/gif.latex?w_i%28k%29"> is the ith parameter value at time k.
 
 
+The standard descent method is an iterative procedure for locally-minimizing <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> with respect to <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D">, defined as:
+<!--
+\textbf{w}(k+1) = \textbf{w}(k) - \eta \; \frac{\partial f(\textbf{w}(t))}{\partial \textbf{w}}
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bw%7D%28k&plus;1%29%20%3D%20%5Ctextbf%7Bw%7D%28k%29%20-%20%5Ceta%20%5C%3B%20%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%7D%28t%29%29%7D%7B%5Cpartial%20%5Ctextbf%7Bw%7D%7D">
+</p>
+
+---
 We define the optimization problem as:
 <!--
 \textbf{x}^* = \min\limits_{\textbf{x}} \;f(\textbf{x})
