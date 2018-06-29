@@ -56,6 +56,23 @@ The standard gradient descent equation tells us that a fraction <img src="https:
 The transient behavior of any gradient descent method depends on the form of <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29">. One major limitation stems from the fact that the gradient components <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%7D%28k%29%29%7D%7B%5Cpartial%20w_i%7D"> **vary widely
 in magnitude in different directions** from <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%5E*">.
 
+The key idea of gradient descent is that *not all parameters are equal: rather than treating a change in every parameter equally, we need to scale each parameter's change according to how much it affects the function*. In other words, we need to tell the gradient descent to substract **a different portion of the gradient for each parameter**.
+
+Before understanding the natural gradient equation, let's just see what does it look like:
+<!--
+\textbf{w}(k+1) = \textbf{w}(k) - \eta \; \textbf{G}^{-1}(\textbf{w}(k))\;\frac{\partial f(\textbf{w}(k))}{\partial \textbf{w}}
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%28k&plus;1%29%20%3D%20%5Ctextbf%7Bw%7D%28k%29%20-%20%5Ceta%20%5C%3B%20%5Ctextbf%7BG%7D%5E%7B-1%7D%28%5Ctextbf%7Bw%7D%28k%29%29%5C%3B%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%7D%28k%29%29%7D%7B%5Cpartial%20%5Ctextbf%7Bw%7D%7D">
+</p>
+
+
+Now, it is time to dive into the technical details of this intuition.
+
+## Understanding the natural gradient:
+
+We want to find the best distance to decrease the function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> at each direction. Since <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> is a high dimensional function, we can imagine intuitively a high dimensional curved function where the shortest distance between two points is not a straight line anymore. The fundamental notion of distance as defined in the Euclidian geometry is no longer valid.
+
 ---
 We define the optimization problem as:
 <!--
