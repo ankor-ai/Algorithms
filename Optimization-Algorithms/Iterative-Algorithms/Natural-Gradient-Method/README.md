@@ -41,10 +41,10 @@ where <img src="https://latex.codecogs.com/gif.latex?w_i%28k%29"> is the ith par
 
 The standard descent method is an iterative procedure for locally-minimizing <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> with respect to <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D">, defined as:
 <!--
-\textbf{w}(k+1) = \textbf{w}(k) - \eta \; \frac{\partial f(\textbf{w}(t))}{\partial \textbf{w}}
+\textbf{w}(k+1) = \textbf{w}(k) - \eta \; \frac{\partial f(\textbf{w}(k))}{\partial \textbf{w}}
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bw%7D%28k&plus;1%29%20%3D%20%5Ctextbf%7Bw%7D%28k%29%20-%20%5Ceta%20%5C%3B%20%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%7D%28t%29%29%7D%7B%5Cpartial%20%5Ctextbf%7Bw%7D%7D">
+  <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%28k&plus;1%29%20%3D%20%5Ctextbf%7Bw%7D%28k%29%20-%20%5Ceta%20%5C%3B%20%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%7D%28k%29%29%7D%7B%5Cpartial%20%5Ctextbf%7Bw%7D%7D">
 </p>
 
 where <img src="https://latex.codecogs.com/gif.latex?%5Ceta"> is a fixed step size. Many adaptative variants of the standard gradient descent makes the step size dependent on time using different strategies. However, we choose to <img src="https://latex.codecogs.com/gif.latex?%5Ceta"> to be constant since this is not related to the deep understanding of the natural gradient.
