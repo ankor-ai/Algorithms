@@ -273,7 +273,7 @@ The Lagrangean multiplier method adds the constraint to the initial optimization
 f(\textbf{w + dw}) = f(\textbf{w}) + \eta \; \nabla f(\textbf{w})^T \textbf{a} - {\color{DarkGreen} \lambda \,\textbf{a}^T \,\textbf{G} \;\textbf{a}}
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%20%3D%20f%28%5Ctextbf%7Bw%7D%29%20&plus;%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20%5Ctextbf%7Ba%7D%20-%20%7B%5Ccolor%7BDarkGreen%7D%20%5Clambda%20%5C%2C%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D%7D">
+<img src="https://latex.codecogs.com/gif.latex?%5Clarge%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%20%3D%20f%28%5Ctextbf%7Bw%7D%29%20&plus;%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20%5Ctextbf%7Ba%7D%20-%20%7B%5Ccolor%7BDarkGreen%7D%20%5Clambda%20%5C%2C%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D%7D">
 </p>
 
 We want to find the best <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7Ba%7D"> that minimizes <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29">. Thus we samply set its gradient with respect to <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7Ba%7D"> to 0:
@@ -281,7 +281,7 @@ We want to find the best <img src="https://latex.codecogs.com/gif.latex?%5Csmall
 \frac{\partial f(\textbf{w + dw})}{\partial \textbf{a}} = \textbf{0} = \eta \; \nabla f(\textbf{w})^T - \lambda \,\textbf{G} \;\textbf{a}
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%7D%7B%5Cpartial%20%5Ctextbf%7Ba%7D%7D%20%3D%20%5Ctextbf%7B0%7D%20%3D%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20-%20%5Clambda%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D">
+<img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%7D%7B%5Cpartial%20%5Ctextbf%7Ba%7D%7D%20%3D%20%5Ctextbf%7B0%7D%20%3D%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20-%20%5Clambda%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D">
 </p>
 
 which gives us:
@@ -312,20 +312,9 @@ while the best direction that the standard gradient descent take is:
 
 In other words, **the natural gradient is a generalization of the standard gradient descent from the Euclidian geometry to the Riemannian geometry**. Practically, this generalization involves a new term called the metric tensor which depends on the structure of the parameter space. That's it!
 
-## Pros and cons:
-
-If the function f is quadratic, then x + <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cupsilon"> is the exact minimizer of f. If the function f is nearly quadratic, intuition suggests that <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x&plus;%5Cupsilon"> should be a very good estimate of the minimizer of f, i.e., <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x%5E*">. In other words, the performance of Newton's method depends on how good the quadratic approximation is.
-
-<!-- 
-Although
-the natural gradient is local in nature and only depends
-on the parameter values w(k), determining G(w)
-usually requires precise knowledge of the problem structure.
-However, the information needed to form G(w) varies from
-problem to problem, and there exist several practical cases
-where this information is easily o
-
--->
+## Cons:
+ 
+Determining <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7BG%7D"> usually requires precise knowledge of the problem structure. However, this knowledge varies from problem to problem, and there exist several practical cases where this information is easily know.
 
 
 ## Implementation
