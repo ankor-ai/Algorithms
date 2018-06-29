@@ -74,7 +74,31 @@ In the rest of this tutorial, we will explain from where is this matrix coming a
 
 ## Understanding the natural gradient:
 
-We want to find the best distance to decrease the function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> at each direction. Since <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> is a high dimensional function, we can imagine intuitively a high dimensional curved function where the shortest distance between two points is not a straight line anymore. The fundamental notion of distance as defined in the Euclidian geometry is no longer valid.
+We want to find the best distance to decrease the function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> at each direction. Since <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> is a high dimensional function, we can imagine intuitively a high dimensional curved function where the shortest distance between two points is not a straight line anymore. In other words, the fundamental notion of distance as defined in the Euclidian geometry is no longer valid because it does not take into account the characteristics of the parameter space.
+
+In other words, we need to make sure to have the accurate distance metric to navigate in the parameter space. This means that we should be able to compute the shortest distance between two points in our parameter space even if it is not a straight line. For instance, how can we measure the distance between two cities on our spherical earth. Well, these types of problems can be solved by using the [Riemannian geometry](https://en.wikipedia.org/wiki/Riemannian_geometry). Euclidian geometry holds only when the plan is flat.
+
+So we want to understand how the term <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7BG%7D%5E%7B-1%7D%28%5Ctextbf%7Bw%7D%28k%29%29"> allows us to measure the distances on curved plans.
+
+To do so let's study a basic example.
+
+### Example
+
+<p align="center">
+  <img src="./images/two_bases_one_vector.png">
+</p>
+
+
+<!-- 
+Although
+the natural gradient is local in nature and only depends
+on the parameter values w(k), determining G(w)
+usually requires precise knowledge of the problem structure.
+However, the information needed to form G(w) varies from
+problem to problem, and there exist several practical cases
+where this information is easily o
+
+-->
 
 ---
 We define the optimization problem as:
