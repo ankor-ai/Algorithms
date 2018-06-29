@@ -248,6 +248,12 @@ Let's formalize this sentence. We are looking for the best direction <img src="h
   <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bdw%7D%20%3D%20%5Ceta%20%5C%3B%20%5Ctextbf%7Ba%7D%5C%5C">
 </p>
 
+where <img src="https://latex.codecogs.com/gif.latex?%5C%7C%20%5Ctextbf%7Ba%7D%20%5C%7C%20%3D%201">. In other words, we choose the norm of the direction to be <img src="https://latex.codecogs.com/gif.latex?%5Ceta"> and we would like to minimize:
+
+<img src="https://latex.codecogs.com/gif.latex?%5Clarge%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%20%3D%20f%28%5Ctextbf%7Bw%7D%29%20&plus;%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20%5Ctextbf%7Ba%7D">
+
+with respect to <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7Ba%7D"> under the constraint
+
 Our goal is to find a direction <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bdw%7D">.
 <!-- 
 Although
