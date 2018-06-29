@@ -260,8 +260,13 @@ with respect to <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctex
 -->
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5C%7C%5Ctextbf%7Ba%7D%5C%7C%5E2%20%3D%201%20%3D%20%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D">
- </p>
+</p>
  
+Now we see why we introduced the metric tensor <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7BG%7D"> in the previous section :)
+ 
+Now we have a classical constrained optimization which is can be solved with the [Lagrangean multiplier method"](https://en.wikipedia.org/wiki/Lagrange_multiplier). This is a very known method. If you don't know about it, you can easily understand it. [Just google it](http://lmgtfy.com/?q=Lagrange+multiplier)!
+
+
 <!-- 
 Although
 the natural gradient is local in nature and only depends
