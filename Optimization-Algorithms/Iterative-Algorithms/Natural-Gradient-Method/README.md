@@ -249,7 +249,9 @@ Let's formalize this sentence. We are looking for the best direction <img src="h
 </p>
 
 where <img src="https://latex.codecogs.com/gif.latex?%5C%7C%20%5Ctextbf%7Ba%7D%20%5C%7C%20%3D%201">. In other words, we choose the norm of the direction to be <img src="https://latex.codecogs.com/gif.latex?%5Ceta"> and we would like to minimize:
-
+<!--
+f(\textbf{w + dw}) = f(\textbf{w}) + \eta \; \nabla f(\textbf{w})^T \textbf{a}
+-->
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20f%28%5Ctextbf%7Bw%20&plus;%20dw%7D%29%20%3D%20f%28%5Ctextbf%7Bw%7D%29%20&plus;%20%5Ceta%20%5C%3B%20%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%5ET%20%5Ctextbf%7Ba%7D">
  </p>
@@ -264,7 +266,7 @@ with respect to <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctex
  
 Now we see why we introduced the metric tensor <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7BG%7D"> in the previous section :)
  
-Now we have a classical constrained optimization which can be solved with the [Lagrangean multiplier method"](https://en.wikipedia.org/wiki/Lagrange_multiplier). This is a very known method. If you don't know about it, you can easily understand it. [Just google it](http://lmgtfy.com/?q=Lagrange+multiplier)!
+Now we have a classical constrained optimization which can be solved with the [Lagrangean multiplier method](https://en.wikipedia.org/wiki/Lagrange_multiplier). This is a very known method. If you don't know about it, you can easily understand it. [Just google it](http://lmgtfy.com/?q=Lagrange+multiplier)!
 
 The Lagrangean multiplier method adds the constraint to the initial optimization function:
 
