@@ -310,7 +310,7 @@ while the best direction that the standard gradient descent take is:
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Ba%7D%20%3D%20%5Calpha%20%5C%2C%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29">
 </p>
 
-In other words, the natural gradient is a generalization of the standard gradient descent from the Euclidian geometry to the Riemannian geometry. Practically, this generalization involves a new term called the metric tensor which depends on the structure of the parameter space. That's it!
+In other words, **the natural gradient is a generalization of the standard gradient descent from the Euclidian geometry to the Riemannian geometry**. Practically, this generalization involves a new term called the metric tensor which depends on the structure of the parameter space. That's it!
 
 ## Pros and cons:
 
@@ -330,11 +330,11 @@ where this information is easily o
 
 ## Implementation
 
-We implemented the Newton's method in Python 3 using PyTorch. We chose the function <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20f%28%5Ctextbf%7Bx%7D%29%20%3D%20%24%5Csum%20x_i%5E4%24"> where <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bm%20%5Ctimes%20n%7D">.
+We implemented the natural gradient method in Python 3 using PyTorch. We chose the function <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20f%28%5Ctextbf%7Bx%7D%29%20%3D%20%24%5Csum%20x_i%5E4%24"> where <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bm%20%5Ctimes%20n%7D">.
 
 You can simply use the code by running:
 ``` shell
-python3 Newton_Method.py
+python3 Natural_Gradient_Method.py
 ```
 
 ## References
