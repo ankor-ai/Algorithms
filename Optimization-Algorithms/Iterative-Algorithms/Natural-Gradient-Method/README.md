@@ -256,10 +256,10 @@ where <img src="https://latex.codecogs.com/gif.latex?%5C%7C%20%5Ctextbf%7Ba%7D%2
 
 with respect to <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7Ba%7D"> under the constraint:
 <!--
-\|\textbf{a}\|^2 = \textbf{a}^T \,\textbf{G} \;\textbf{a}^T
+\|\textbf{a}\|^2 = 1 = \textbf{a}^T \,\textbf{G} \;\textbf{a}
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5C%7C%5Ctextbf%7Ba%7D%5C%7C%5E2%20%3D%20%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5C%7C%5Ctextbf%7Ba%7D%5C%7C%5E2%20%3D%201%20%3D%20%5Ctextbf%7Ba%7D%5ET%20%5C%2C%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Ba%7D">
  </p>
  
 <!-- 
