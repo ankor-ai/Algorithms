@@ -172,10 +172,14 @@ Interestingly, we can rewrite the previous formula in the matrix form as follows
 In other words, the norm square of any vector <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bx%7D"> in a basis <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20B"> can be written as follows:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Bx%7D%5ET%20%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Bx%7D">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5C%7C%20%5Ctextbf%7Bx%7D%20%5C%7C%5E2%20%3D%20%5Ctextbf%7Bx%7D%5ET%20%5Ctextbf%7BG%7D%20%5C%3B%5Ctextbf%7Bx%7D">
 </p>
 
-Cool. What if we ask you to compute the norm of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D"> using the non orthonormal basis <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D"> ?
+where <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7BG%7D"> is the matrix of all dot products between all the possible pairs of the basis vectors of <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20B">.
+
+This is a very important formula to know. If the basis is orthonormal, then <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7BG%7D"> is the identity matrix. When the basis vectors are not orthogonal, then non diagonal elements are not zero. 
+
+Cool! What if we ask you to compute the norm of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D"> using the non orthonormal basis <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D"> ?
 
 Well, we can keep using the previous formula in the new basis <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D">:
 <!--
@@ -189,7 +193,7 @@ Well, we can keep using the previous formula in the new basis <img src="https://
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%5C%7C%5Cvec%7Bv%7D%5C%7C%5E2%20%26%3D%20%5Cvec%7Bv%7D%5C%20%5Ccdot%20%5Cvec%7Bv%7D%5C%5C%20%26%3D%20%28%5Ctilde%7Bv_1%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%2C%20%5Ctilde%7Bv_2%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%20%5Ccdot%20%28%5Ctilde%7Bv_1%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%2C%20%5Ctilde%7Bv_2%7D%20%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%5C%5C%20%26%3D%20%5Ctilde%7Bv_1%7D%5E2%20%5C%3B%28%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%2C%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%20&plus;%20%5Ctilde%7Bv_1%7D%20%5Ctilde%7Bv_2%7D%20%5C%3B%28%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%2C%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%20&plus;%20%5Ctilde%7Bv_2%7D%20%5Ctilde%7Bv_1%7D%20%5C%3B%28%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%2C%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_1%7D%7D%7D%29%20&plus;%20%5Ctilde%7Bv_2%7D%5E2%5C%2C%20%28%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%2C%5C%2C%7B%5Ccolor%7BDarkOrange%7D%5Ctilde%7B%5Cvec%7Be_2%7D%7D%7D%29%20%5Cend%7Balign*%7D">
 </p>
 
-Interestingly, we can rewrite the previous formula in the matrix form as follows:
+In a smiliar way as for the orthonormal basis, we can rewrite the previous formula in the matrix form as follows:
 <!--
 \begin{align*}
 \|\vec{v}\|^2 &=
