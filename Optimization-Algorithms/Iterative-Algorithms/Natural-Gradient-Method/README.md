@@ -93,7 +93,7 @@ Let's consider the vector <img src="https://latex.codecogs.com/gif.latex?%5Csmal
 * <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D">: a non orthonomal basis.
 
 <p align="center">
-  <img src="./images/two_bases_one_vector.png">
+  <img src="./images/two_bases_one_vector.png" width="50%" height="50%">
 </p>
 
 Thus, we can write the vector <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D"> in the two basis as follows:
@@ -110,7 +110,7 @@ Thus, we can write the vector <img src="https://latex.codecogs.com/gif.latex?%5C
 To compute the norm of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D">, the most obvious way is to apply the Pythagoras theorem:
 
 <p align="center">
-  <img src="./images/two_bases_one_vector_pythagoras.png">
+  <img src="./images/two_bases_one_vector_pythagoras.png" width="50%" height="50%">
 </p>
 
 Or simply by remembering the fact that:
