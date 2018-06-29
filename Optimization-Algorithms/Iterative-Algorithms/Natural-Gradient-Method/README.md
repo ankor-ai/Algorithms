@@ -133,6 +133,39 @@ Thus we have:
 
 and we find ourselves applying the Pythagorean theorem again since we are using an orthonomal basis. This tells us that the Pythagorean theorem is a special case of the previous formula.
 
+Interestingly, we can rewrite the previous formula in the matrix form as follows:
+<!--
+\begin{align*}
+\|\vec{v}\|^2 &=
+\begin{bmatrix}
+    v_{1} & v_{2} 
+\end{bmatrix}
+\begin{bmatrix}
+    {\color{DarkOrange}\tilde{\vec{e_1}}} \cdot {\color{DarkOrange}\tilde{\vec{e_1}}} & {\color{DarkOrange}\tilde{\vec{e_2}}} \cdot {\color{DarkOrange}\tilde{\vec{e_1}}} \\
+    {\color{DarkOrange}\tilde{\vec{e_1}}} \cdot {\color{DarkOrange}\tilde{\vec{e_2}}} & {\color{DarkOrange}\tilde{\vec{e_2}}} \cdot {\color{DarkOrange}\tilde{\vec{e_2}}}
+\end{bmatrix}
+\begin{bmatrix}
+    v_{1} \\ v_{2} 
+\end{bmatrix} \\&= 
+\begin{bmatrix}
+    v_{1} & v_{2} 
+\end{bmatrix} \qquad
+\begin{bmatrix}
+    {\color{DarkOrange}1} & {\color{DarkOrange}0} \\
+    {\color{DarkOrange}0} & {\color{DarkOrange}1}
+\end{bmatrix}\qquad
+\begin{bmatrix}
+    v_{1} \\ v_{2} 
+\end{bmatrix} \\
+&= \quad \;\;\vec{v}\ \qquad \;\;\;
+\begin{bmatrix}
+    {\color{DarkOrange}1} & {\color{DarkOrange}0} \\
+    {\color{DarkOrange}0} & {\color{DarkOrange}1}
+\end{bmatrix}\qquad
+\;\;\;\vec{v}
+\end{align*}
+-->
+
 Cool. What if we ask you to compute the norm of <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Cvec%7Bv%7D"> using the non orthonormal basis <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D"> ?
 
 Well, we can keep using the previous formula in the new basis <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%7B%5Ccolor%7BDarkOrange%7D%20%28%5C%3B%5Ctilde%7B%5Cvec%7Be_1%7D%7D%2C%20%5Ctilde%7B%5Cvec%7Be_2%7D%7D%5C%3B%29%7D">:
