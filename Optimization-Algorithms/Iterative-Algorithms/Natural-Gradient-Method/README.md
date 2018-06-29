@@ -293,6 +293,12 @@ which gives us:
 </p>
 
 or
+<!--
+\textbf{a} = \frac{\eta}{\lambda} \, \textbf{G}^{-1}\,\nabla f(\textbf{w})
+-->
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Ba%7D%20%3D%20%5Cfrac%7B%5Ceta%7D%7B%5Clambda%7D%20%5C%2C%20%5Ctextbf%7BG%7D%5E%7B-1%7D%5C%2C%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29">
+</p>
 
 <!-- 
 Although
