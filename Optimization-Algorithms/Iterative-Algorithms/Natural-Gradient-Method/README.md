@@ -51,6 +51,10 @@ where <img src="https://latex.codecogs.com/gif.latex?%5Ceta"> is a fixed step si
 
 The standard gradient descent equation tells us that a fraction <img src="https://latex.codecogs.com/gif.latex?%5Ceta"> of the gradient of the function <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29"> with respect to each parameter is subtracted from each parameter <img src="https://latex.codecogs.com/gif.latex?w_i%28k%29">. This process is continued indefinitely or until the value of <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%28k%29"> reaches a suitably-small value, at which point <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%28k%29"> is close to <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%5E*">.
 
+### Limitation of the standard gradient descent:
+
+The transient behavior of any gradient descent method depends on the form of <img src="https://latex.codecogs.com/gif.latex?f%28%5Ctextbf%7Bw%7D%29">. One major limitation stems from the fact that the gradient components <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20f%28%5Ctextbf%7Bw%7D%28k%29%29%7D%7B%5Cpartial%20w_i%7D"> **vary widely
+in magnitude in different directions** from <img src="https://latex.codecogs.com/gif.latex?%5Ctextbf%7Bw%7D%5E*">.
 ---
 We define the optimization problem as:
 <!--
