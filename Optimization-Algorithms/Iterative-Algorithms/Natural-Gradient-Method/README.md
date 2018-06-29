@@ -294,10 +294,12 @@ which gives us:
 
 or
 <!--
-\textbf{a} = \frac{\eta}{\lambda} \, \textbf{G}^{-1}\,\nabla f(\textbf{w})
+\begin{align*}
+\textbf{a} &= \frac{\eta}{\lambda} \, \textbf{G}^{-1}\,\nabla f(\textbf{w}) \\&= \alpha\; \textbf{G}^{-1}\,\nabla f(\textbf{w})
+\end{align*}
 -->
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Ctextbf%7Ba%7D%20%3D%20%5Cfrac%7B%5Ceta%7D%7B%5Clambda%7D%20%5C%2C%20%5Ctextbf%7BG%7D%5E%7B-1%7D%5C%2C%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29">
+  <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20%5Cbegin%7Balign*%7D%20%5Ctextbf%7Ba%7D%20%26%3D%20%5Cfrac%7B%5Ceta%7D%7B%5Clambda%7D%20%5C%2C%20%5Ctextbf%7BG%7D%5E%7B-1%7D%5C%2C%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%20%5C%5C%26%3D%20%5Calpha%5C%3B%20%5Ctextbf%7BG%7D%5E%7B-1%7D%5C%2C%5Cnabla%20f%28%5Ctextbf%7Bw%7D%29%20%5Cend%7Balign*%7D">
 </p>
 
 <!-- 
