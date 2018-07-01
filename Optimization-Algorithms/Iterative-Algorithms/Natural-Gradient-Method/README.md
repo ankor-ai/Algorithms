@@ -316,16 +316,6 @@ In other words, **the natural gradient is a generalization of the standard gradi
  
 Determining <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20%5Ctextbf%7BG%7D"> usually requires precise knowledge of the problem structure. However, this knowledge varies from problem to problem, and there exist several practical cases where this information is easily know.
 
-
-## Implementation
-
-We implemented the natural gradient method in Python 3 using PyTorch. We chose the function <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20f%28%5Ctextbf%7Bx%7D%29%20%3D%20%24%5Csum%20x_i%5E4%24"> where <img src="https://latex.codecogs.com/gif.latex?%5Csmall%20x%20%5Cin%20%5Cmathbb%7BR%7D%5E%7Bm%20%5Ctimes%20n%7D">.
-
-You can simply use the code by running:
-``` shell
-python3 Natural_Gradient_Method.py
-```
-
 ## References
 * [Amari's Paper - Why Natural Gradient?](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.76.7538&rep=rep1&type=pdf): this is a light paper that focuses on the intuition and examples to understand natural gradient.
 * [Amari reference paper about natural gradient](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.452.7280&rep=rep1&type=pdf): this is the original paper to understand natural gradient.
