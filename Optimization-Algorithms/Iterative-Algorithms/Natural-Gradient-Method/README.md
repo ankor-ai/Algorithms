@@ -1,7 +1,7 @@
 # Natural Gradient Method
 
 ## Description
-This repository provides the description and the implementation of the natural gradient method.
+This repository provides the description of the natural gradient method.
 
 ## Assumptions of the natural gradient method
 
