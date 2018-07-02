@@ -32,7 +32,7 @@ m = \min\limits_{c} \;f(c) = \min\limits_{c}\; E(|X-c|)
   <img src="https://latex.codecogs.com/gif.latex?%5Clarge%20m%20%3D%20%5Cmin%5Climits_%7Bc%7D%20%5C%3Bf%28c%29%20%3D%20%5Cmin%5Climits_%7Bc%7D%5C%3B%20E%28%7CX-c%7C%29">
 </p>
 
-Why it is the case? Well, that's simply compute the derivative of this function to 0 and see which value solve it :)
+Why it is the case? Well, let's simply compute the derivative of this function to 0 and see which value solve it :)
 <!--
 \begin{align*}
 0 = \frac{d}{dc}\;f(c)&=\frac{d}{dc}\;E(|X-c|)\\&= E(\frac{d}{dc}\,|X-c|) \\
